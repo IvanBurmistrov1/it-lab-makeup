@@ -626,3 +626,8 @@ footer{
     left: -30px;
     top: 5px;
 }
+
+/* products */
+.header-shadow{
+    box-shadow: 0 0 23px 5px rgba(26, 26, 25, 0.07);
+}
