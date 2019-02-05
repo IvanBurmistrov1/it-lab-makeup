@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT-LAB</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+</head>
+<body>
+<header>
+    <div class="container-fluid">
+        <div id="header">
+            <div id="catnav">
+                <div class="dropdown">
+                    <button class="dropdown-toggle" type="button" id="lang-dropdown" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                        RU
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="lang-dropdown">
+                        <a class="dropdown-item" href="#">RO</a>
+                        <a class="dropdown-item" href="#">EN</a>
+                    </div>
+                </div>
+                <ul id="menu">
+                    <li class="menu-item">
+                        <a href="#">О нас</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">Новости</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">Услуги</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">Ubiquiti</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">Mikrotik</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">Тренинги</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+                <div id="socials">
+                    <div class="facebook">
+                        <a href="#"><img src="assets/facebook.svg" alt="Facebook"></a>
+                    </div>
+                </div>
+            </div>
+            <div id="infonav">
+                <div id="left">
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" href="#" role="button" id="catalogue-dropdown"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Каталог
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="catalogue-dropdown">
+                            <a class="dropdown-item" href="#">...</a>
+                        </div>
+                    </div>
+                    <div id="search" class="input-group mb-0">
+                        <input type="text" name="search" value="" placeholder="Поиск товаров" class="form-control"
+                               aria-label="search" autocomplete="off">
+                        <div class="input-group-append">
+                            <button type="button"><img src="assets/search.svg" alt="Search"></button>
+                        </div>
+                    </div>
+                </div>
+                <div id="logo">
+                    <a href="#"><img src="assets/logo.svg" alt="IT-LAB"></a>
+                </div>
+                <div id="right">
+                    <div id="phone">
+                        <img src="assets/tel_black.svg" alt="Phone">
+                        <span>
+                                022 855-975
+                            </span>
+                    </div>
+                    <div id="profile">
+                        <div class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <img src="assets/profile.svg" alt="Profile">
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a href="#" class="dropdown-item">Register</a>
+                                <a href="#" class="dropdown-item">Login</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="vr"></div>
+                    <div id="compare">
+                        <a href="#"><img src="assets/compare.svg" alt="Compare"></a>
+                    </div>
+                    <div id="wishlist">
+                        <a href="#"><img src="assets/favorite.svg" alt="Whishlist"></a>
+                    </div>
+                    <div id="cart">
+                        <a href="http://itlab.md/en-gb?route=checkout/cart" title="Shopping Cart">
+                            <button type="button" data-toggle="dropdown" data-loading-text="Loading..."
+                                    class="dropdown-toggle">
+                                <img src="assets/basket.svg" alt="Cart">
+                                <span id="cart-total">0</span>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-right">
+                                <li>
+                                    <p class="text-center">Корзина пустая!</p>
+                                </li>
+                            </ul>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="slider">
+            <div>
+                <div class="info">
+                    <h2>Серверные шкафы Cisco по сниженной цене</h2>
+                    <p>Только до конца ноября приобретайте акционные шкафы Cisco по сниженным ценам с полной гарантией и
+                        обслуживанием на 1 год!</p>
+                    <a href="#" class="btn">Перейти к выбору</a>
+                </div>
+                <img src="img/cisco.png" alt="Cisco">
+            </div>
+            <div>
+                <div class="info">
+                    <h2>Серверные шкафы Cisco по сниженной цене</h2>
+                    <p>Только до конца ноября приобретайте акционные шкафы Cisco по сниженным ценам с полной гарантией и
+                        обслуживанием на 1 год!</p>
+                    <a href="#" class="btn">Перейти к выбору</a>
+                </div>
+                <img src="img/cisco.png" alt="Cisco">
+            </div>
+            <div>
+                <div class="info">
+                    <h2>Серверные шкафы Cisco по сниженной цене</h2>
+                    <p>Только до конца ноября приобретайте акционные шкафы Cisco по сниженным ценам с полной гарантией и
+                        обслуживанием на 1 год!</p>
+                    <a href="#" class="btn">Перейти к выбору</a>
+                </div>
+                <img src="img/cisco.png" alt="Cisco">
+            </div>
+        </div>
+        <div class="slider-nav">
+            <div>
+                <div class="info">
+                    <h4>Новые маршрутизаторы Tp-Link! Технологии ...</h4>
+                </div>
+                <img src="img/tp-link.png" alt="Cisco">
+            </div>
+            <div>
+                <div class="info">
+                    <h4>Серверные шкафы Cisco по сниженной цене</h4>
+                </div>
+                <img src="img/cisco.png" alt="Cisco">
+            </div>
+            <div>
+                <div class="info">
+                    <h4>Серверные шкафы Cisco по сниженной цене</h4>
+                </div>
+                <img src="img/cisco.png" alt="Cisco">
+            </div>
+        </div>
+    </div>
+</header>
+<main id="main-wrapper">
+    <section class="swiper container-fluid">
+        <div><a href="#"><img src="img/routers.png" alt="Routers">
+            <p>Маршрутизаторы</p></a></div>
+        <div><a href="#"><img src="img/routers.png" alt="Routers">
+            <p>Маршрутизаторы</p></a></div>
+        <div><a href="#"><img src="img/routers.png" alt="Routers">
+            <p>Маршрутизаторы</p></a></div>
+        <div><a href="#"><img src="img/routers.png" alt="Routers">
+            <p>Маршрутизаторы</p></a></div>
+        <div><a href="#"><img src="img/routers.png" alt="Routers">
+            <p>Маршрутизаторы</p></a></div>
+        <div><a href="#"><img src="img/routers.png" alt="Routers">
+            <p>Маршрутизаторы</p></a></div>
+        <div><a href="#"><img src="img/routers.png" alt="Routers">
+            <p>Маршрутизаторы</p></a></div>
+        <div><a href="#"><img src="img/routers.png" alt="Routers">
+            <p>Маршрутизаторы</p></a></div>
+        <div><a href="#"><img src="img/routers.png" alt="Routers">
+            <p>Маршрутизаторы</p></a></div>
+        <div><a href="#"><img src="img/routers.png" alt="Routers">
+            <p>Маршрутизаторы</p></a></div>
+    </section>
+    <section class="products">
+        <div class="container-fluid">
+            <div class="head">
+                <h2>Покупай оборудование с гарантией</h2>
+                <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                    <li class="">
+                        <a class="active" id="pills-recommend-tab" data-toggle="pill" href="#pills-recommend" role="tab"
+                           aria-controls="pills-recommend" aria-selected="true">рекомендуем</a>
+                    </li>
+                    <li class="">
+                        <a class="" id="pills-new-tab" data-toggle="pill" href="#pills-new" role="tab"
+                           aria-controls="pills-new" aria-selected="false">новинки</a>
+                    </li>
+                    <li class="">
+                        <a class="" id="pills-special-tab" data-toggle="pill" href="#pills-special" role="tab"
+                           aria-controls="pills-special" aria-selected="false">акции</a>
+                    </li>
+                    <li class="">
+                        <a class="" id="pills-hits-tab" data-toggle="pill" href="#pills-hits" role="tab"
+                           aria-controls="pills-hits" aria-selected="false">хиты продаж</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-recommend" role="tabpanel"
+                     aria-labelledby="pills-recommend-tab">
+                    <div class="row">
+                        <div class="product-layout product-grid col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                            <div class="product-thumb">
+                                <div class="image"><a href="http://itlab.md/en-gb/wifi-routers/hap-ac"><img
+                                        src="img/hap-lite.png"
+                                        alt="Mikrotik hAP ac" title="Mikrotik hAP ac" class="img-fluid"></a></div>
+                                <div class="caption">
+                                    <h4><a href="http://itlab.md/en-gb/wifi-routers/hap-ac">Коммутатор Mikrotik hAP lite
+                                        (RB941-2nD-TC)</a></h4>
+                                    <p class="old_price">5 245 MDL</p>
+                                    <p class="price"> 8,970.00 Lei</p>
+                                </div>
+                                <div class="flow-buttons">
+                                    <button type="button" data-toggle="tooltip" data-placement="top" title=""
+                                            onclick="wishlist.add('52');" data-original-title="Add to Wish List">
+                                        <img src="assets/add_favorite.svg" alt="Wish">
+                                    </button>
+                                    <button type="button" data-toggle="tooltip" data-placement="top" title=""
+                                            onclick="compare.add('52');" data-original-title="Compare this Product">
+                                        <img src="assets/add_compare.svg" alt="Compare">
+                                    </button>
+                                </div>
+                                <div class="button-group">
+                                    <form name="quantity" action="" method="get">
+                                        <input id="quantity" type="number" value="1" min="1" max="100" step="1">
+                                    </form>
+                                    <a class="btn" role="button" onclick="cart.add('52', '1');">
+                                        В корзину
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-layout product-grid col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                            <div class="product-thumb">
+                                <div class="image"><a href="http://itlab.md/en-gb/wifi-routers/hap-ac"><img
+                                        src="img/hap-lite.png"
+                                        alt="Mikrotik hAP ac" title="Mikrotik hAP ac" class="img-fluid"></a></div>
+                                <div class="caption">
+                                    <h4><a href="http://itlab.md/en-gb/wifi-routers/hap-ac">Коммутатор Mikrotik hAP lite
+                                        (RB941-2nD-TC)</a></h4>
+                                    <p class="price"> 8,970.00 Lei</p>
+                                </div>
+                                <div class="flow-buttons">
+                                    <button type="button" data-toggle="tooltip" data-placement="top" title=""
+                                            onclick="wishlist.add('52');" data-original-title="Add to Wish List">
+                                        <img src="assets/add_favorite.svg" alt="Wish">
+                                    </button>
+                                    <button type="button" data-toggle="tooltip" data-placement="top" title=""
+                                            onclick="compare.add('52');" data-original-title="Compare this Product">
+                                        <img src="assets/add_compare.svg" alt="Compare">
+                                    </button>
+                                </div>
+                                <div class="button-group">
+                                    <form name="quantity" action="" method="get">
+                                        <input id="quantity" type="number" value="1" min="1" max="100" step="1">
+                                    </form>
+                                    <a class="btn" role="button" onclick="cart.add('52', '1');">
+                                        В корзину
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-layout product-grid col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                            <div class="product-thumb">
+                                <div class="image"><a href="http://itlab.md/en-gb/wifi-routers/hap-ac"><img
+                                        src="img/hap-lite.png"
+                                        alt="Mikrotik hAP ac" title="Mikrotik hAP ac" class="img-fluid"></a></div>
+                                <div class="caption">
+                                    <h4><a href="http://itlab.md/en-gb/wifi-routers/hap-ac">Коммутатор Mikrotik hAP lite
+                                        (RB941-2nD-TC)</a></h4>
+                                    <p class="price"> 8,970.00 Lei</p>
+                                </div>
+                                <div class="flow-buttons">
+                                    <button type="button" data-toggle="tooltip" data-placement="top" title=""
+                                            onclick="wishlist.add('52');" data-original-title="Add to Wish List">
+                                        <img src="assets/add_favorite.svg" alt="Wish">
+                                    </button>
+                                    <button type="button" data-toggle="tooltip" data-placement="top" title=""
+                                            onclick="compare.add('52');" data-original-title="Compare this Product">
+                                        <img src="assets/add_compare.svg" alt="Compare">
+                                    </button>
+                                </div>
+                                <div class="button-group">
+                                    <form name="quantity" action="" method="get">
+                                        <input id="quantity" type="number" value="1" min="1" max="100" step="1">
+                                    </form>
+                                    <a class="btn" role="button" onclick="cart.add('52', '1');">
+                                        В корзину
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-layout product-grid col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                            <div class="product-thumb">
+                                <div class="image"><a href="http://itlab.md/en-gb/wifi-routers/hap-ac"><img
+                                        src="img/hap-lite.png"
+                                        alt="Mikrotik hAP ac" title="Mikrotik hAP ac" class="img-fluid"></a></div>
+                                <div class="caption">
+                                    <h4><a href="http://itlab.md/en-gb/wifi-routers/hap-ac">Коммутатор Mikrotik hAP lite
+                                        (RB941-2nD-TC)</a></h4>
+                                    <p class="price"> 8,970.00 Lei</p>
+                                </div>
+                                <div class="flow-buttons">
+                                    <button type="button" data-toggle="tooltip" data-placement="top" title=""
+                                            onclick="wishlist.add('52');" data-original-title="Add to Wish List">
+                                        <img src="assets/add_favorite.svg" alt="Wish">
+                                    </button>
+                                    <button type="button" data-toggle="tooltip" data-placement="top" title=""
+                                            onclick="compare.add('52');" data-original-title="Compare this Product">
+                                        <img src="assets/add_compare.svg" alt="Compare">
+                                    </button>
+                                </div>
+                                <div class="button-group">
+                                    <form name="quantity" action="" method="get">
+                                        <input id="quantity" type="number" value="1" min="1" max="100" step="1">
+                                    </form>
+                                    <a class="btn" role="button" onclick="cart.add('52', '1');">
+                                        В корзину
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-new" role="tabpanel" aria-labelledby="pills-new-tab">...</div>
+                <div class="tab-pane fade" id="pills-special" role="tabpanel" aria-labelledby="pills-special-tab">...
+                </div>
+                <div class="tab-pane fade" id="pills-hits" role="tabpanel" aria-labelledby="pills-hits-tab">...</div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid">
+        <div id="message">
+            <p style="text-align: center"><strong>Затрудняетесь с выбором?</strong> Просто наберите нас по телефону
+                (022) 855-975
+                и получите исчерпывающую консультацию наших специалистов!</p>
+        </div>
+        <div class="d-flex justify-content-center">
+            <a class="btn grey" href="#">
+                перейти в каталог
+            </a>
+        </div>
+    </section>
+    <hr>
+    <section class="news">
+        <div class="container-fluid">
+            <div class="head">
+                <h2>Новости</h2>
+                <div><a href="#" class="link">Все новости</a></div>
+            </div>
+            <div class="row" style="margin-left: -50px; margin-right:-50px;">
+                <div class="container-fluid news-latest">
+                    <div>
+                        <time>
+                            27 октября 2018
+                        </time>
+                        <a href="#">
+                            На нашем складе очередное поступление оборудования Mikrotik и Ubiquiti
+                        </a>
+                    </div>
+                    <div>
+                        <time>
+                            27 октября 2018
+                        </time>
+                        <a href="#">
+                            На нашем складе очередное поступление оборудования Mikrotik и Ubiquiti
+                        </a>
+                    </div>
+                    <div>
+                        <time>
+                            27 октября 2018
+                        </time>
+                        <a href="#">
+                            На нашем складе очередное поступление оборудования Mikrotik и Ubiquiti
+                        </a>
+                    </div>
+                    <div>
+                        <time>
+                            27 октября 2018
+                        </time>
+                        <a href="#">
+                            На нашем складе очередное поступление оборудования Mikrotik и Ubiquiti
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="subscribe">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <img src="assets/subscribe.svg" alt="Subscribe">
+                </div>
+                <div class="col-6">
+                    <form action="#" class="e-mail_input">
+                        <input type="text" placeholder="Ваш e-mail">
+                        <button role="button" type="submit" class="btn">подписаться</button>
+                    </form>
+                </div>
+                <div class="col-5">
+                    <div class="text">
+                        <h4>
+                            Будьте в курсе!
+                        </h4>
+                        <p>
+                            Узнавайте свежую информацию о скидках и акциях первым.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services">
+        <div class="container-fluid">
+            <div class="row" id="certificates">
+                <div class="col-5">
+                    <h2>Лучшие it-услуги для вашего бизнеса</h2>
+                    <div class="iso">
+                        <img src="assets/iso.png" alt="ISO" height="70">
+                        <span>Наши сертификации</span>
+                    </div>
+                </div>
+                <div class="col-7">
+                    <p>
+                        Мы готовы решить любую задачу вашей компании в сфере it-технологий. Наши специалисты накопили
+                        весомый опыт, поэтому мы предоставляем самые оптимальные решения по качеству и цене.
+                    </p>
+                    <br>
+                    <p>
+                        It-lab является официальным дилером Ubiquity, MikroTik, Cisco, GAOKE, SwitchRay, Infomir,
+                        Digium, Yeastar, Dinstar, NetUP, Zimbra и других мировых брендов в сфере IT-решений.
+                    </p>
+                    <br>
+                    <p>
+                        Плюс мы осуществляем гарантийную и сервисную поддержку всей предлагаемой техники. У нас покупать
+                        удобно и выгодно!
+                    </p>
+                </div>
+            </div>
+            <div class="row" id="warranties">
+                <div class="col-3">
+                    <div class="line">
+                        <img src="assets/warranty.svg" alt="Warranty">
+                        <h4>Гарантия <br>
+                            на оборудование</h4>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="line">
+                        <img src="assets/like.svg" alt="Like">
+                        <h4>
+                            Сервисная<br>
+                            поддержка<br>
+                            клиентов
+                        </h4>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="line">
+                        <img src="assets/moldova.svg" alt="Moldova">
+                        <h4>
+                            Официальный<br> поставщик
+                        </h4>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="line">
+                        <img src="assets/wallet.svg" alt="Wallet">
+                        <h4>
+                            Наличный<br>
+                            и безналичный<br>
+                            расчет
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cooperate">
+        <hr>
+        <div class="container-fluid heading">
+            <h2>Мы всегда рады сотрудничеству!</h2>
+            <p>Нашими услугами пользуются более 300 организаций<br>
+                и предприятий Республики Молдова</p>
+        </div>
+        <div class="container-fluid companies">
+            <div><a href="#"><img src="img/felicia.png" alt="Felicia"></a></div>
+            <div><a href="#"><img src="img/air_moldova.png" alt="Air Moldova"></a></div>
+            <div><a href="#"><img src="img/purcari.png" alt="Purcari"></a></div>
+            <div><a href="#"><img src="img/energy_fitness.png" alt="Energy Fitness"></a></div>
+            <div><a href="#"><img src="img/romstal.png" alt="Romstal"></a></div>
+            <div><a href="#"><img src="img/wizzair.png" alt="Wizzair"></a></div>
+            <div><a href="#"><img src="img/wizzair.png" alt="Wizzair"></a></div>
+        </div>
+        <div class="contact_us container-fluid">
+            <div class="row">
+                <div class="col-6">
+                    <h3>
+                        Связаться с нами
+                    </h3>
+                    <p id="call-us">Позвоните нам, напишите или приезжайте в офис и мы найдем лучшее it-решение для
+                        вашего
+                        бизнеса.</p>
+                    <a href="#" class="btn">Написать онлайн</a>
+                </div>
+                <div class="col-6">
+                    <div class="row">
+                        <div class="col-10 offset-2" id="contacts">
+                            <div class="address">
+                                <p>Адрес: MD2020, муниципий Кишинэу, <br>
+                                    пер. Студенческий 2/4, офис 217</p>
+                            </div>
+                        </div>
+                        <div class="col-5 offset-2">
+                            <div class="phone">
+                                <p>(022) 855-975 <br>
+                                    (069) 988-933 <br>
+                                    (069) 999-975</p>
+                            </div>
+                        </div>
+                        <div class="col-5">
+                            <div class="mail">
+                                <p>
+                                    <a href="mailto:info@it-lab.md">info@it-lab.md</a>
+                                    <br>
+                                    <a href="mailto:sales@it-lab.md">sales@it-lab.md</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2717.756187910707!2d28.845882027528905!3d47.064632870776634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97d168f77b5bf%3A0x36d930e0b8768dc9!2zU3RyYWRlbGEgU3R1ZGVuxaNpbG9yIDExLzIsIENoaciZaW7Eg3UsINCc0L7Qu9C00LDQstC40Y8!5e0!3m2!1sru!2sde!4v1544457135764"
+                height="225" frameborder="0" style="border:0;width:100%" allowfullscreen></iframe>
+    </section>
+</main>
+<footer>
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-9">
+                <div class="footer-subscribe">
+                    <img src="assets/subscribe.svg" alt="Subscribe">
+                    <div class="text">
+                        <p>
+                            Подпишитесь на новости и акции
+                        </p>
+                    </div>
+                    <form action="#" class="e-mail_input">
+                        <input type="text" placeholder="Ваш e-mail">
+                        <button role="button" type="submit" class="btn">подписаться</button>
+                    </form>
+                </div>
+                <div id="footer-menus">
+                    <ul>
+                        <li><a href="#">о нас</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">услуги</a></li>
+                        <li><a href="#">контакты</a></li>
+                        <li><a href="#">Ubiquiti</a></li>
+                        <li><a href="#">Mikrotik</a></li>
+                        <li><a href="#">тренинги</a></li>
+                    </ul>
+                    <ul class="menu">
+                        <li><a href="#">Маршрутизаторы</a></li>
+                        <li><a href="#">Коммутаторы</a></li>
+                        <li><a href="#">WiFi Маршрутизаторы</a></li>
+                        <li><a href="#">Комплектующие</a></li>
+                        <li><a href="#">Антенны</a></li>
+                        <li><a href="#">VoIP и Телефония</a></li>
+                        <li><a href="#">SFP, XFP, SFP+, XENPAK модули</a></li>
+                        <li><a href="#">Видеонаблюдение</a></li>
+                        <li><a href="#">Готовые решения и акции</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="phone">022 855-975</div>
+                <ul class="timetable">
+                    <li><b>Пн-Пт:</b>&#160;
+                        <p>9<sup>00</sup>-20<sup>00</sup></p></li>
+                    <li><b>Сб:</b>&#160;
+                        <p>9<sup>00</sup>-15<sup>00</sup></p></li>
+                    <li><b>Вс:</b>&#160;
+                        <p>выходной</p></li>
+                </ul>
+                <div class="copyright">
+                    <p>© 2005-2018 - it-lab.md <br>
+                        Все права защищены</p>
+                </div>
+                <div class="follow-us">
+                    <span>Следите за нами:</span>&#160;<a href="#"><img src="assets/facebook.svg" alt="Facebook"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-input-spinner.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>

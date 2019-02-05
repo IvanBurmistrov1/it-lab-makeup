@@ -1,0 +1,195 @@
+.slider{
+    margin-top: 45px;
+}
+.slider .slick-prev, .slider-nav .slick-prev{
+    display: none !important;
+}
+.slider .slick-next{
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 40px;
+    font-size: 14px;
+    right: -110px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 0;
+}
+.slider h2{
+    font-size: 42px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+.slider p, .slider h2{
+    color: #252525;
+    max-width: 475px;
+}
+.slider p{
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.625;
+    margin-bottom: 45px;
+}
+.slick-dots button{
+    visibility: hidden;
+    position: relative;
+    height: 33px;
+    padding: 0;
+    width: 4px;
+}
+.slick-dots button:after{
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    border-left: 4px solid #787a7e;
+    height: 33px;
+    transition: border 0.25s linear;
+}
+.slick-dots li{
+    margin-bottom: 7px;
+}
+.slick-dots li:not(.slick-active) button:after{
+    border-left-color: #bdbdbd;
+}
+.slick-dots{
+    float: left;
+    position: absolute;
+    top: 10px;
+    left: -88px;
+    margin-right: 35px;
+}
+.slider-nav{
+    height: 95px;
+    width: 365px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 15px 0;
+    margin-right: 60px;
+    border-top: 1px solid #bdbdbd;
+    border-bottom: 1px solid #bdbdbd;
+}
+.slider-nav img{
+    height: 65px;
+}
+.slider-nav .slick-slide *:not(img){
+    height: 100%;
+}
+.slider .slick-slide > div > div{
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-right: 30px;
+}
+.slider-nav .slick-slide > div > div{
+    align-items: center;
+    padding-right: 30px;
+    justify-content: space-between;
+}
+.swiper .slick-slide > div > div a{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.slick-slide .btn{
+    margin-bottom: 68px;
+}
+.slider-nav .slick-next{
+    width: 0;
+    overflow: hidden;
+    padding: 0;
+}
+.slider-nav .slick-next:after{
+    content: "";
+    position: absolute;
+    background: url("../assets/arrow_right.svg");
+    width: 12px;
+    height: 28px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.slider-nav h2{
+    margin-right: 45px;
+}
+.swiper, .swiper *:not(img):not(p){
+    height: 150px;
+}
+.swiper a{
+    display: flex;
+    color: #000;
+}
+.swiper p{
+    font-size: 10px;
+    text-transform: uppercase;
+}
+.swiper .slick-arrow, .news-latest .slick-arrow, .companies .slick-arrow{
+    position: absolute;
+    width: 0;
+    overflow: hidden;
+    top: 0;
+    padding: 0 0 0 12px;
+    height: 28px;
+    color: transparent;
+    bottom: 0;
+    margin: auto;
+    left: 0;
+}
+.swiper .slick-next, .news-latest .slick-next, .companies .slick-next{
+    right: 0;
+    left: unset;
+}
+.swiper .slick-arrow:before, .news-latest .slick-arrow:before, .companies .slick-arrow:before{
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 28px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.swiper .slick-prev:before, .news-latest .slick-prev:before, .companies .slick-prev:before{
+    background: url("../assets/arrrow_left.svg") center center no-repeat;
+}
+.swiper .slick-next:before, .news-latest .slick-next:before, .companies .slick-next:before{
+    background: url("../assets/arrow_right.svg") center center no-repeat;
+}
+.news-latest .slick-slide > div > div{
+    flex-direction: column;
+}
+
+.news-latest time{
+    margin-bottom: 15px;
+}
+.news-latest a{
+    font-weight: bold;
+    color: #252525;
+    line-height: 1.875;
+}
+.news-latest .slick-arrow{
+    bottom: unset;
+    margin: 0;
+    top: 10px
+}
+@media screen and (max-width: 1500px){
+    .slick-dots{
+        left: 0;
+    }
+    .slider .slick-next{
+        right: -20px;
+    }
+}
+@media screen and (max-width: 1400px){
+    .slick-dots{
+        position: relative;
+        top: 10px;
+        left: unset;
+    }
+    .slider .slick-next{
+        display: none;
+    }
+}
