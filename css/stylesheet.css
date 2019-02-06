@@ -631,3 +631,141 @@ footer{
 .header-shadow{
     box-shadow: 0 0 23px 5px rgba(26, 26, 25, 0.07);
 }
+.breadcrumb {
+    background-color: white;
+    margin-left: 100px;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+.breadcrumb li a{
+    font-size: 14px;
+    color: #8F8484
+}
+.breadcrumb li span{
+    display: inline-block;
+    background: url("../img/arrow.png") no-repeat top center;
+    width: 6px;
+    height: 11px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.item-gallery{
+
+    display: flex;
+}
+.gallery-list{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 420px;
+}
+.gallery-list li{
+
+    margin: 0 10px 10px;
+    border: #DFDFDF solid 1px;
+}
+
+.gallery-list img{
+    width: 60px;
+    height: 60px;
+
+}
+.gallery-list li[class="active"]{
+    border-color: #193997;
+
+}
+.new-mark{
+    width: 30px;
+    height: 63px;
+    background-color: #6B7FB3;
+    background-image: url("../img/new_.png");
+    margin-right: 40px;
+    margin-left: 30px;
+}
+.item-image img{
+    max-width: 520px;
+}
+#item-characteristics h1{
+    font-size: 42px;
+    font-family: "Ubuntu";
+    color: #252525;
+    line-height: 1.2;
+    margin-top: -10px;
+
+}
+.item-actions{
+    margin-top: 45px;
+}
+.item-action{
+    display: flex;
+    margin-right: 30px;
+}
+.item-action span{
+
+    font-size: 12px;
+    padding-left: 15px;
+    padding-top: 4px;
+    color: #8F8484;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.7px;
+}
+
+.action-icon{
+    display: inline-block;
+    background-image: url("../assets/add_favorite.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 18px;
+    height: 18px;
+}
+.icon-add-favorite{
+    background-image: url("../assets/add_favorite.svg");
+}
+.icon-add-compare{
+    background-image: url("../assets/add_compare.svg");
+}
+
+#add-cart-btn{
+    padding: 0 35px;
+    margin-left: 20px;
+}
+.no-before:before{content:none!important;}
+.no-before:after{content:none!important;}
+.cart-options
+.old_price{
+    font-size: 16px;
+    color: #8f8484;
+    text-decoration: line-through;
+}
+.cart-options .price{
+    font-size: 30px;
+    color: #1c3997;
+    margin-left: 10px;
+}
+.seller-garanty span{
+    margin-left: 15px;
+    font-size: 14px;
+
+    color: #252525;
+
+}
+.item-code{
+    margin-left: 40px;
+}
+.nav-item{
+    padding: 20px;
+    letter-spacing: 1.3px;
+
+}
+.nav-tabs .nav-link.active{
+    border-color: #1c3997!important;
+}
+.nav-tabs a{
+
+     font-size: 12px;
+     font-family: "Ubuntu";
+     color: #1C3997;
+     font-weight: bold;
+     text-transform: uppercase;
+ }
