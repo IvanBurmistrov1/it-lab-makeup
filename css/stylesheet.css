@@ -633,7 +633,6 @@ footer{
 }
 .breadcrumb {
     background-color: white;
-    margin-left: 100px;
     margin-bottom: 0px;
     padding: 0px;
 }
@@ -665,10 +664,15 @@ footer{
     border: #DFDFDF solid 1px;
 }
 
-.gallery-list img{
-    width: 60px;
-    height: 60px;
+.gallery-list li{
+    box-sizing: border-box;
+    width: 70px;
+    height: 70px;
 
+}
+.gallery-list li img{
+    width: 100%;
+    height: 100%;
 }
 .gallery-list li[class="active"]{
     border-color: #193997;
@@ -683,7 +687,10 @@ footer{
     margin-left: 30px;
 }
 .item-image img{
-    max-width: 520px;
+    width: 100%;
+    height: 100%;
+    /*border: silver 1px solid;*/
+    object-fit: cover;
 }
 #item-characteristics h1{
     font-size: 42px;
@@ -695,20 +702,27 @@ footer{
 }
 .item-actions{
     margin-top: 45px;
+    align-items: flex-start;
+}
+.item-actions .item-action:last-child{
+    margin-right: 0px;
 }
 .item-action{
     display: flex;
-    margin-right: 30px;
+    margin-right: 20px;
 }
+
+
 .item-action span{
 
     font-size: 12px;
-    padding-left: 15px;
+    padding-left: 11px;
     padding-top: 4px;
     color: #8F8484;
     font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 1.7px;
+    letter-spacing: 1.44px;
+
 }
 
 .action-icon{
@@ -726,23 +740,51 @@ footer{
     background-image: url("../assets/add_compare.svg");
 }
 
-#add-cart-btn{
-    padding: 0 35px;
-    margin-left: 20px;
+.add-cart-btn{
+    padding: 0 25px;
+    margin-left: 14px;
+    height: 48px;
+    border-radius: 24px;
+    background-color: #244ea8;
 }
 .no-before:before{content:none!important;}
 .no-before:after{content:none!important;}
-.cart-options
-.old_price{
+
+.cart-options .old_price{
     font-size: 16px;
     color: #8f8484;
     text-decoration: line-through;
 }
+.old_price_valute {
+    text-transform: uppercase;
+    /* Text style for "" */
+    font-size: 22px;
+    /* Text style for "MDL" */
+    font-size: 12px;
+}
+
+.price_valute{
+    text-transform: uppercase;
+    /* Text style for "" */
+    font-size: 22px;
+    /* Text style for "MDL" */
+    font-size: 14px;
+}
+.cart-options .old_price{
+    margin-right: 10px;
+}
 .cart-options .price{
     font-size: 30px;
     color: #1c3997;
-    margin-left: 10px;
+
 }
+.seller-garanty{
+    margin-top: 13px;
+    margin-bottom: 13px;
+    margin-right: 26px;
+}
+
+
 .seller-garanty span{
     margin-left: 15px;
     font-size: 14px;
@@ -769,3 +811,14 @@ footer{
      font-weight: bold;
      text-transform: uppercase;
  }
+
+.price-wrapper{
+    flex-wrap: wrap;
+    align-items: center;
+    flex-basis: auto
+}
+
+.input-group-spinner {
+    display: flex;
+    flex-wrap: nowrap;
+}
