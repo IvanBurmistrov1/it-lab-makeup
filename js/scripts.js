@@ -46,4 +46,45 @@ $(document).ready(function() {
     });
 
     $('.slick-dots').prependTo( '.slick-dotted' );
+
+
+    // вкладки с содержанием
+// http://dbmast.ru
+    $(".tab_content").hide();
+    $(".tab_content:first").show();
+    /* в режиме вкладок */
+    $("ul.tabs li").click(function () {
+        $(".tab_content").hide();
+        var activeTab = $(this).attr("rel");
+        $("#" + activeTab).fadeIn();
+        $("ul.tabs li").removeClass("active");
+        $(this).addClass("active");
+        $(".tab_accordion").removeClass("d_active");
+        $(".tab_accordion[rel^='" + activeTab + "']").addClass("d_active");
+        $("#" + activeTab).addClass('selected-tab');
+    });
+    /* в режиме аккордеона */
+    $(".tab_accordion").click(function () {
+        if($('.selected-tab').length){
+            var id = $(".selected-tab")[0].id;
+        }
+
+        $(".tab_content").hide().removeClass('selected-tab');
+        var d_activeTab = $(this).attr("rel");
+        if(id!=d_activeTab) {
+            $("#" + d_activeTab).addClass('selected-tab').fadeIn();
+            $(".tab_accordion").removeClass("d_active");
+            $(this).addClass("d_active");
+            $("ul.tabs li").removeClass("active");
+            $("ul.tabs li[rel^='" + d_activeTab + "']").addClass("active");
+        }else{
+            $(this).removeClass('d_active');
+        }
+    });
+    /* дополнительный класс tab_last,
+    чтобы добавить границу к правой
+    стороне последней вкладки. */
+    $('ul.tabs li').last().addClass("tab_last");
+
 });
+

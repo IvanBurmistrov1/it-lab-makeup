@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/tabs-accordeon.css">
 </head>
 <body>
 <header class="bg-white header-shadow">
@@ -122,13 +123,6 @@
 </header>
 <main id="main-wrapper">
     <div class="container-fluid">
-        <div class="row no-gutters ">
-            <div class="col-xl-5 col-md-6 offset-xl-7 offset-md-6 align-self-center">
-
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid">
         <div id="item-card">
             <div class="item-gallery">
                 <ul class="gallery-list">
@@ -162,15 +156,14 @@
                     <span>Сравнить</span>
                 </a>
             </div>
-            <div class="item-description cart-options "
-                 style="margin-top: 30px"
-                 class="d-flex align-content-center">
+            <div id="item-price-block" class="item-description cart-options "
+                class="d-flex align-content-center">
                 <div class="price-wrapper d-flex ">
                     <p class="old_price">1 445 <span class="old_price_valute">MDL</span></p>
                     <p class="price"> 1 221 <span class="price_valute">MDL</span></p>
                 </div>
-                <div class="d-flex align-items-center">
-                    <div class="button-group" style="margin-left: 30px">
+                <div class="cart-wrapper d-flex align-items-center">
+                    <div class="button-group">
                         <form name="quantity" action="" method="get">
                             <input id="quantity" type="number" value="1" min="1" max="100" step="1">
                         </form>
@@ -180,73 +173,90 @@
                 </div>
 
             </div>
-            <div class="item-description"
-                 style="margin-top: 30px;border-top: rgb(223, 223, 223) solid 1px ;border-bottom:   rgb(223, 223, 223) solid 1px;">
-                <div style="margin: 13px 3px" class="flex-wrap">
-                    <div class="seller-garanty d-flex align-items-center">
+            <div id="seller-garanties" class="item-description">
+
+                    <div class="seller-garanty">
                         <img src="assets/hand.png" alt="Phone">
                         <span>
                                         Под заказ
                                     </span>
                     </div>
-                    <div class="seller-garanty d-flex align-items-center">
+                    <div class="seller-garanty">
                         <img src="assets/car.png" alt="Phone">
                         <span>
                                         Самовывоз
                                     </span>
                     </div>
-                    <div class="seller-garanty d-flex align-items-center">
+                    <div class="seller-garanty">
                         <img height="27" src="assets/garanty.png" alt="Phone">
                         <span>
                                         Гарантия 12 мес.
                                     </span>
                     </div>
-                </div>
+
             </div>
-            <div class="item-description" style="margin: 30px 0">
+            <div class="item-description" style="margin-top: 27px">
                 <div class="d-flex align-items-center">
                     <img height="27" src="img/tp-link-logo.png" alt="Phone">
-                    <span class="item-code">
-                                        Гарантия 12 мес.
-                                </span>
+                    <p class="item-code">
+                        <span style="color: #a19696;line-height: 26px;">Код товара:</span>
+                        3403249
+                    </p>
                 </div>
             </div>
         </div>
-            <div class="item-additional-description">
-                <nav>
-                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home"
-                           role="tab"
-                           aria-controls="nav-home" aria-selected="true">Описание</a>
-                        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile"
-                           role="tab"
-                           aria-controls="nav-profile" aria-selected="false">Характеристики</a>
-                        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact"
-                           role="tab"
-                           aria-controls="nav-contact" aria-selected="false">Дополнительно</a>
-                        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact"
-                           role="tab"
-                           aria-controls="nav-contact" aria-selected="false">Сопутствующие</a>
-                    </div>
-                </nav>
-                <div class="tab-content" id="nav-tabContent">
-                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                        Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim
-                        occaecat
-                        veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim.
-                        Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud
-                        minim
-                        non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor
-                        ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do
-                        dolore.
-                        Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
-                    </div>
-                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...
-                    </div>
-                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...
-                    </div>
+
+        <!-- Базовый контейнер вкладок(табов) -->
+        <div id="item-tabs" class="tabs-box">
+            <!-- Список вкладок -->
+            <ul class="tabs">
+                <li class="active" rel="tab1">Описание</li>
+                <li rel="tab2">Харрактеристика</li>
+                <li rel="tab3">Дополнительно</li>
+                <li rel="tab4" class="tab_last">Сопутствующее</li>
+            </ul>
+            <!-- Контейнер для блоков с содержанием -->
+            <div class="tab_container">
+                <!-- Панель заголовка в режиме аккордеона -->
+                <h3 class="d_active tab_accordion" rel="tab1">Описание</h3>
+                <!-- Блок вкладки с содержанием -->
+                <div id="tab1" class="tab_content selected-tab" style="display: block;">
+                    <h2>Содержимое Вкладки 1</h2>
+                    <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.
+                    <p>Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами.</p>
                 </div>
+                <!-- конец #tab1 -->
+                <h3 class="tab_accordion" rel="tab2">Харрактеристика</h3>
+                <div id="tab2" class="tab_content" style="display: none;">
+                    <h2>Содержимое Вкладки 2</h2>
+                    <p><img src="http://lorempixel.com/250/200" class="img-left">
+                    <p>Я совсем один и блаженствую в здешнем краю, словно созданном для таких, как я. Я так счастлив, мой друг, так упоен ощущением покоя, что искусство мое страдает от этого.
+                    <p>Душа моя озарена неземной радостью, как эти чудесные весенние утра, которыми я наслаждаюсь от всего сердца.</p>
+                </div>
+                <!-- конец #tab2 -->
+                <h3 class="tab_accordion" rel="tab3">Дополнительно</h3>
+                <div id="tab3" class="tab_content" style="display: none;">
+                    <h2>Содержимое Вкладки 3</h2>
+                    <p><img src="http://lorempixel.com/250/200" class="img-right">
+                    <p>Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое.
+                    <p>Лежа на панцирнотвердой спине, он видел, стоило ему приподнять голову, свой коричневый, выпуклый, разделенный дугообразными чешуйками живот, на верхушке которого еле держалось готовое вот-вот окончательно сползти одеяло</p>
+                </div>
+                <!-- конец #tab3 -->
+                <h3 class="tab_accordion" rel="tab4">Сопутствующее</h3>
+                <div id="tab4" class="tab_content" style="display: none;">
+                    <h2>Содержимое Вкладки 4</h2>
+
+                </div>
+                <!-- конец #tab4 -->
             </div>
+            <!-- конец .tab_container -->
+        </div>
+        <!-- конец .tabs-box -->
+
+    </div>
+
+
+
 
 </main>
 
