@@ -103,7 +103,7 @@ ul.tabs li.active {
 */
 
 .tab_content {
-    padding: 20px;
+
     display: none;
 }
 
@@ -113,23 +113,6 @@ ul.tabs li.active {
 .tab_content p {
     margin-bottom: 10px
 }
-
-
-/**
- * Изображения внутри вкладок
- * ...сделаем их отзывчивыми
- */
-
-.tab_content img {
-    width: 100%;
-    height: auto;
-    -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-
-/* полноразмерная картинка */
 
 .tab_content img .large-img {
     width: 100%;
@@ -148,11 +131,6 @@ ul.tabs li.active {
 
 /* миниатюра справа */
 
-.tab_content img.img-right {
-    width: 25%;
-    float: right;
-    margin: 5px 0 15px 15px;
-}
 
 
 /* Встраиваемое видео */

@@ -865,6 +865,95 @@ footer{
 #item-tabs{
     margin-top: 50px;
 }
+
+.tab_content {
+    padding: 51px 66px 0 20px;
+    margin-bottom: 51px;
+}
+
+
+
+.tab_content p
+{
+    color: #313131;;
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+.tab_content ul li{
+    color: #313131;
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-weight: 400;
+}
+.tab_content h2 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+
+}
+.tab_content th {
+    font-size: 18px;
+    font-weight: 700;
+}
+.tab_content ul li{
+    position:relative;
+    margin-bottom: 10px;
+    line-height: 26px;
+
+}
+.tab_content ul{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 58px;
+}
+.tab_content ul li:before{
+    display: block;
+    content: "";
+    position: absolute;
+    background: url("../img/liststyle.png") no-repeat center;
+    left: -20px;
+    width: 7px;
+    height: 7px;
+    top: 10px;
+}
+.tab_content table{
+    border: none;
+}
+
+.tab_characteristics {
+    padding-top: 13px;
+    padding-left: 0px;
+    padding-right: 10px;
+}
+
+.tab_content th {
+    padding: 47px 22px 32px 22px;
+}
+
+.tab_content tr{
+    height: 46px;
+}
+
+.tab_content td{
+    padding-left:  22px;
+    padding-right: 22px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    vertical-align: middle;
+    color: #252525;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+}
+.tab_content tbody tr:nth-child(2n+1){
+    background-color: #f4f5f9;
+}
+
+.tab_content h2{
+    margin-bottom: 30px;
+}
 @media screen and (max-width: 1200px){
     #item-card{
         grid-template-columns: 6fr 6fr;
@@ -889,12 +978,15 @@ footer{
         top: 50px;
     }
 
-
-
-
     #item-title{
         font-size: 34px;
     }
+
+    .tab_content{
+        padding: 42px 26px 0 20px;
+        margin-bottom: 42px;
+    }
+
 }
 
 @media screen and (max-width: 991px){
@@ -922,9 +1014,19 @@ footer{
     .item-actions{
         margin-top: 24px;
     }
+    .tab_content{
+        padding: 42px 20px 0 20px;
+        margin-bottom: 42px;
+    }
 
 }
+.image{
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+}
 @media screen and (max-width: 767px) {
     .item-image img{
         height:auto;
@@ -974,10 +1076,25 @@ footer{
     #item-tabs{
         margin-top: 30px;
     }
+    .tab_content p,.tab_content ul li {
+        font-size: 14px;
+    }
+    .tab_content{
+        padding: 10px 20px 22px 20px;
+        margin-bottom: 0px;
+    }
+
+    .tab_content th{
+        padding-left: 0px;
+    }
+    .tab_content th:first-child {
+        padding-top: 25px;
+    }
 }
 @media  screen and  (min-width: 1200px) and (max-width: 1300px){
 
     .container-fluid{
         padding: 0 calc((100% - 1200px) / 2);
     }
+
 }
