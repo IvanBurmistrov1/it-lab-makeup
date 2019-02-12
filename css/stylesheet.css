@@ -300,6 +300,8 @@ a.link{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
+
 }
 .product-thumb a:not(.btn){
     display: flex;
@@ -338,6 +340,7 @@ h4{
 }
 .caption h4{
     margin-bottom: 25px;
+    width: 100%;
 }
 .old_price{
     color: #8f8484;
@@ -869,6 +872,8 @@ footer{
 .tab_content {
     padding: 51px 66px 0 20px;
     margin-bottom: 51px;
+
+
 }
 
 
@@ -936,6 +941,22 @@ footer{
     height: 46px;
 }
 
+.related-items,.similar-items{
+    display: block;
+    float: left;
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.related-items .product-layout {
+    float: left;
+    width: calc(100% / 3);
+
+}
+.thumb-item-title{
+    justify-self: stretch;
+}
 .tab_content td{
     padding-left:  22px;
     padding-right: 22px;
@@ -953,6 +974,43 @@ footer{
 
 .tab_content h2{
     margin-bottom: 30px;
+}
+.related-items{
+    width: 75%;
+    float: left;
+
+}
+.related-items .btn,.similar-items  .btn{
+    margin-bottom: 0px!important;
+}
+.similar-items{
+    display: block;
+    width: 100%;
+
+    position: relative;
+}
+.similar-items .product-layout{
+    float: left;
+
+}
+
+
+.image img{
+    max-height: 180px;
+}
+.tab-related-items{
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 36px;
+}
+.related-items-section h2{
+    color: #252525;
+
+    font-size: 34px;
+    font-weight: 500;
+}
+#item-tabs{
+    margin-bottom: 70px;
 }
 @media screen and (max-width: 1200px){
     #item-card{
@@ -986,9 +1044,25 @@ footer{
         padding: 42px 26px 0 20px;
         margin-bottom: 42px;
     }
-
+    .related-items {
+        width: 100%;
+    }
+    /*.similar-items{
+        padding-left: 0px!important;
+        padding-right: 0px!important;
+    }*/
+    .related-items-section h2{
+    text-align: center;
+    }
 }
 
+
+@media screen and (min-width:1200px){
+    .similar-items,.related-items{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
 @media screen and (max-width: 991px){
     .item-image img{
         height: 325px;
@@ -1027,6 +1101,7 @@ footer{
     justify-content: center;
 
 }
+
 @media screen and (max-width: 767px) {
     .item-image img{
         height:auto;
@@ -1089,7 +1164,16 @@ footer{
     }
     .tab_content th:first-child {
         padding-top: 25px;
+
+    .tab-related-items{
+        padding-left: 25px;
+        padding-right: 25px;
     }
+
+    .tab-related-items{
+        margin-bottom: 0px;
+    }
+
 }
 @media  screen and  (min-width: 1200px) and (max-width: 1300px){
 

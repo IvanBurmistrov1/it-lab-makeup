@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
     $('.slider').slick({
         infinite: true,
         slidesToShow: 1,
@@ -45,8 +45,40 @@ $(document).ready(function() {
         locale: null
     });
 
-    $('.slick-dots').prependTo( '.slick-dotted' );
+    $('.slick-dots').prependTo('.slick-dotted');
 
+    $(".similar-items").slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ]
+    });
 
     // вкладки с содержанием
 // http://dbmast.ru
@@ -62,29 +94,100 @@ $(document).ready(function() {
         $(".tab_accordion").removeClass("d_active");
         $(".tab_accordion[rel^='" + activeTab + "']").addClass("d_active");
         $("#" + activeTab).addClass('selected-tab');
-    });
-    /* в режиме аккордеона */
-    $(".tab_accordion").click(function () {
-        if($('.selected-tab').length){
-            var id = $(".selected-tab")[0].id;
-        }
 
-        $(".tab_content").hide().removeClass('selected-tab');
-        var d_activeTab = $(this).attr("rel");
-        if(id!=d_activeTab) {
-            $("#" + d_activeTab).addClass('selected-tab').fadeIn();
-            $(".tab_accordion").removeClass("d_active");
-            $(this).addClass("d_active");
-            $("ul.tabs li").removeClass("active");
-            $("ul.tabs li[rel^='" + d_activeTab + "']").addClass("active");
-        }else{
-            $(this).removeClass('d_active');
+        if ($('#' + activeTab + ' .related-items').hasClass('slick-slider')) {
+            $('#' + activeTab + " .related-items").slick('unslick');
         }
-    });
-    /* дополнительный класс tab_last,
-    чтобы добавить границу к правой
-    стороне последней вкладки. */
-    $('ul.tabs li').last().addClass("tab_last");
+        $('#' + activeTab + " .related-items").slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            variableWidth: false,
+            mobileFirst: true,
+
+            responsive: [
+
+                {
+                    breakpoint: 769,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 991,
+                    settings: "unslick"
+                }
+
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+
 
 });
+
+/* в режиме аккордеона */
+$(".tab_accordion").click(function () {
+    if ($('.selected-tab').length) {
+        var id = $(".selected-tab")[0].id;
+    }
+
+    $(".tab_content").hide().removeClass('selected-tab');
+    var d_activeTab = $(this).attr("rel");
+    if (id != d_activeTab) {
+        $("#" + d_activeTab).addClass('selected-tab').fadeIn();
+        $(".tab_accordion").removeClass("d_active");
+        $(this).addClass("d_active");
+        $("ul.tabs li").removeClass("active");
+        $("ul.tabs li[rel^='" + d_activeTab + "']").addClass("active");
+
+        if ($('#' + d_activeTab + ' .related-items').hasClass('slick-slider')) {
+            $('#' + d_activeTab + " .related-items").slick("unslick");
+        }
+        $('#' + d_activeTab + " .related-items").slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            variableWidth: false,
+            responsive: [
+
+                {
+                    breakpoint: 991,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+
+    }
+
+else
+{
+    $(this).removeClass('d_active');
+
+
+}
+
+})
+;
+/* дополнительный класс tab_last,
+чтобы добавить границу к правой
+стороне последней вкладки. */
+$('ul.tabs li').last().addClass("tab_last");
+
+})
+;
 

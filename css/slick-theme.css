@@ -126,7 +126,7 @@
     font-size: 10px;
     text-transform: uppercase;
 }
-.swiper .slick-arrow, .news-latest .slick-arrow, .companies .slick-arrow{
+.swiper .slick-arrow,.related-items .slick-arrow,.similar-items .slick-arrow, .news-latest .slick-arrow, .companies .slick-arrow{
     position: absolute;
     width: 0;
     overflow: hidden;
@@ -138,11 +138,13 @@
     margin: auto;
     left: 0;
 }
-.swiper .slick-next, .news-latest .slick-next, .companies .slick-next{
+
+
+.swiper .slick-next,.related-items .slick-next,.similar-items .slick-next, .news-latest .slick-next, .companies .slick-next{
     right: 0;
     left: unset;
 }
-.swiper .slick-arrow:before, .news-latest .slick-arrow:before, .companies .slick-arrow:before{
+.swiper .slick-arrow:before,.related-items .slick-arrow:before,.similar-items  .slick-arrow:before, .news-latest .slick-arrow:before, .companies .slick-arrow:before{
     content: "";
     position: absolute;
     width: 12px;
@@ -152,10 +154,10 @@
     bottom: 0;
     margin: auto;
 }
-.swiper .slick-prev:before, .news-latest .slick-prev:before, .companies .slick-prev:before{
+.swiper .slick-prev:before,.related-items .slick-prev:before,.similar-items .slick-prev:before, .news-latest .slick-prev:before, .companies .slick-prev:before{
     background: url("../assets/arrrow_left.svg") center center no-repeat;
 }
-.swiper .slick-next:before, .news-latest .slick-next:before, .companies .slick-next:before{
+.swiper .slick-next:before,.related-items .slick-next:before,.similar-items .slick-next:before, .news-latest .slick-next:before, .companies .slick-next:before{
     background: url("../assets/arrow_right.svg") center center no-repeat;
 }
 .news-latest .slick-slide > div > div{
@@ -174,6 +176,19 @@
     bottom: unset;
     margin: 0;
     top: 10px
+}
+.product-thumb{
+    width: 100%;
+}
+.related-items .slick-arrow{
+
+}
+
+@media screen and (max-width: 1200px){
+    .related-items .slick-arrow{
+        display: none;
+        width: 0px;
+    }
 }
 @media screen and (max-width: 1500px){
     .slick-dots{
