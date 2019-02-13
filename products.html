@@ -13,7 +13,7 @@
 
 </head>
 <body>
-<header class="bg-white header-shadow">
+<header style="display: none" class="bg-white header-shadow">
     <div class="container-fluid">
         <div id="header">
             <div id="catnav">
@@ -127,17 +127,17 @@
         <div id="item-card">
             <div class="item-gallery">
                 <ul class="gallery-list">
-                    <li class="active"><img src="img/gallery-list-1.png" alt=""></li>
-                    <li><img src="img/gallery-list-2.png" alt=""></li>
-                    <li><img src="img/gallery-list-3.png" alt=""></li>
+                    <li data-img="img/tp-link-image.png" class="active"><img src="img/tp-link-image.png" alt=""></li>
+                    <li data-img="img/antena.png"><img src="img/antena.png" alt=""></li>
+                    <li data-img="img/biquiti.png"><img src="img/biquiti.png" alt=""></li>
 
                 </ul>
-
-            </div> <div class="item-image" style="position: relative">
-            <img src="img/tp-link-image.png">
-            <span class="new-item-mark">
+                <div class="item-image" style="position: relative">
+                    <img src="img/tp-link-image.png">
+                    <span class="new-item-mark">
                     </span>
-        </div>
+                </div>
+            </div>
             <ul class="item-description breadcrumb " style="margin-top: 40px;margin-bottom: 40px">
                 <li><a href="#">Каталог</a><span></span></li>
                 <li><a href="#">Маршрутизаторы</a><span></span></li>
@@ -640,7 +640,7 @@
 
 </main>
 
-<footer>
+<footer style="display: none">
     <div class="container-fluid">
 
         <div class="row">

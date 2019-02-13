@@ -44,9 +44,14 @@ $(document).ready(function () {
         boostMultiplier: 2,
         locale: null
     });
+    $(".gallery-list li").click(function(){
+        $(".gallery-list .active").toggleClass('active');
+        $(this).toggleClass('active');
+        $(".item-image img").attr('src',$(".gallery-list .active").data('img'));
 
+    });
     $('.slick-dots').prependTo('.slick-dotted');
-
+    $(".gallery").slick();
     $(".similar-items").slick({
         slidesToShow: 4,
         slidesToScroll: 1,
