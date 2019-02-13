@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IT-LAB</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/tabs-accordeon.css">
     <link rel="stylesheet" href="css/stylesheet.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
-    <link rel="stylesheet" href="css/tabs-accordeon.css">
+
 </head>
 <body>
 <header class="bg-white header-shadow">
@@ -131,12 +132,12 @@
                     <li><img src="img/gallery-list-3.png" alt=""></li>
 
                 </ul>
-                <div class="item-image" style="position: relative">
-                    <img src="img/tp-link-image.png">
-                    <span class="new-item-mark">
+
+            </div> <div class="item-image" style="position: relative">
+            <img src="img/tp-link-image.png">
+            <span class="new-item-mark">
                     </span>
-                </div>
-            </div>
+        </div>
             <ul class="item-description breadcrumb " style="margin-top: 40px;margin-bottom: 40px">
                 <li><a href="#">Каталог</a><span></span></li>
                 <li><a href="#">Маршрутизаторы</a><span></span></li>
@@ -296,15 +297,28 @@
                 <h3 class="tab_accordion" rel="tab3">Дополнительно</h3>
                 <div id="tab3" class="tab_content" style="display: none;">
                     <h2>Установочные видео</h2>
-                    <p><img src="http://lorempixel.com/250/200" class="img-right">
-                    <p>Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в
-                        постели
-                        превратился в страшное насекомое.
-                    <p>Лежа на панцирнотвердой спине, он видел, стоило ему приподнять голову, свой коричневый,
-                        выпуклый,
-                        разделенный дугообразными чешуйками живот, на верхушке которого еле держалось готовое
-                        вот-вот
-                        окончательно сползти одеяло</p>
+                    <div class="video-container">
+                        <div class="video">
+
+                            <iframe style="z-index: 1" src="https://www.youtube.com/embed/gpW1aoEl5WM?wmode=opaque" frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            <!--<div class="video-filter"></div>-->
+
+                        </div>
+                        <p style="">
+                            TP-Link Wireless Adapter Setup and Installation Video (for Windows)
+                        </p>
+                    </div>
+                    <h2>Загрузить для TL-WN822N</h2>
+                    <p>
+                        Доступность модели и аппаратной версии может изменяться в зависимости от региона. Не забудьте
+                        подтвердить указанные данные при рассмотрении вопроса о покупке.
+                    </p>
+                    <div class="downloads">
+                        <div><a href="#"><img src="img/download.png">Драйвер TL-WN821N V6</a></div>
+                        <div><a href="#"><img src="img/download.png">Installation Guide for Linux </a></div>
+                    </div>
                 </div>
                 <!-- конец #tab3 -->
                 <h3 class="tab_accordion" rel="tab4">Сопутствующее</h3>
@@ -381,7 +395,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="product-layout product-grid">
                             <div class="product-thumb">
                                 <div class="image"><a href="http://itlab.md/en-gb/wifi-routers/hap-ac"><img
@@ -414,8 +427,70 @@
                                 </div>
                             </div>
                         </div>
-
-
+                        <div class="product-layout product-grid">
+                            <div class="product-thumb">
+                                <div class="image"><a href="http://itlab.md/en-gb/wifi-routers/hap-ac"><img
+                                        src="img/cablu.png"
+                                        alt="Mikrotik hAP ac" title="Mikrotik hAP ac" class="img-fluid"></a></div>
+                                <div class="caption">
+                                    <h4 class="thumb-item-title"><a href="http://itlab.md/en-gb/wifi-routers/hap-ac">Коммутатор
+                                        Mikrotik hAP
+                                        lite
+                                        (RB941-2nD-TC)</a></h4>
+                                    <p class="price"> 8,970.00 Lei</p>
+                                </div>
+                                <div class="flow-buttons">
+                                    <button type="button" data-toggle="tooltip" data-placement="top" title=""
+                                            onclick="wishlist.add('52');" data-original-title="Add to Wish List">
+                                        <img src="assets/add_favorite.svg" alt="Wish">
+                                    </button>
+                                    <button type="button" data-toggle="tooltip" data-placement="top" title=""
+                                            onclick="compare.add('52');" data-original-title="Compare this Product">
+                                        <img src="assets/add_compare.svg" alt="Compare">
+                                    </button>
+                                </div>
+                                <div class="button-group">
+                                    <form name="quantity" action="" method="get">
+                                        <input id="quantity" type="number" value="1" min="1" max="100" step="1">
+                                    </form>
+                                    <a class="btn" role="button" onclick="cart.add('52', '1');">
+                                        В корзину
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-layout product-grid">
+                            <div class="product-thumb">
+                                <div class="image"><a href="http://itlab.md/en-gb/wifi-routers/hap-ac"><img
+                                        src="img/hap-lite.png"
+                                        alt="Mikrotik hAP ac" title="Mikrotik hAP ac" class="img-fluid"></a></div>
+                                <div class="caption">
+                                    <h4 class="thumb-item-title"><a href="http://itlab.md/en-gb/wifi-routers/hap-ac">Коммутатор
+                                        Mikrotik hAP
+                                        lite
+                                        (RB941-2nD-TC)</a></h4>
+                                    <p class="price"> 8,970.00 Lei</p>
+                                </div>
+                                <div class="flow-buttons">
+                                    <button type="button" data-toggle="tooltip" data-placement="top" title=""
+                                            onclick="wishlist.add('52');" data-original-title="Add to Wish List">
+                                        <img src="assets/add_favorite.svg" alt="Wish">
+                                    </button>
+                                    <button type="button" data-toggle="tooltip" data-placement="top" title=""
+                                            onclick="compare.add('52');" data-original-title="Compare this Product">
+                                        <img src="assets/add_compare.svg" alt="Compare">
+                                    </button>
+                                </div>
+                                <div class="button-group">
+                                    <form name="quantity" action="" method="get">
+                                        <input id="quantity" type="number" value="1" min="1" max="100" step="1">
+                                    </form>
+                                    <a class="btn" role="button" onclick="cart.add('52', '1');">
+                                        В корзину
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
@@ -424,139 +499,141 @@
             <!-- конец .tab_container -->
         </div>
         <!-- конец .tabs-box -->
-        <section  class="related-items-section clearfix">
+        <section class="related-items-section clearfix">
             <h2>Похожие товары</h2>
 
-                <div class="similar-items">
+            <div class="similar-items">
 
-                    <div class="product-layout product-grid">
-                        <div class="product-thumb">
-                            <div class="image"><a href="http://itlab.md/en-gb/wifi-routers/hap-ac"><img
-                                    src="img/tp-link-box.png"
-                                    alt="Mikrotik hAP ac" title="Mikrotik hAP ac" class="img-fluid"></a></div>
-                            <div class="caption">
-                                <h4 class="thumb-item-title"><a href="http://itlab.md/en-gb/wifi-routers/hap-ac">Коммутатор
-                                    Mikrotik hAP
-                                    lite
-                                    (RB941-2nD-TC)</a></h4>
-                                <p class="old_price">5 245 MDL</p>
-                                <p class="price"> 8,970.00 Lei</p>
-                            </div>
-                            <div class="flow-buttons">
-                                <button type="button" data-toggle="tooltip" data-placement="top" title=""
-                                        onclick="wishlist.add('52');" data-original-title="Add to Wish List">
-                                    <img src="assets/add_favorite.svg" alt="Wish">
-                                </button>
-                                <button type="button" data-toggle="tooltip" data-placement="top" title=""
-                                        onclick="compare.add('52');" data-original-title="Compare this Product">
-                                    <img src="assets/add_compare.svg" alt="Compare">
-                                </button>
-                            </div>
-                            <div class="button-group">
-                                <form name="quantity" action="" method="get">
-                                    <input id="quantity" type="number" value="1" min="1" max="100" step="1">
-                                </form>
-                                <a class="btn" role="button" onclick="cart.add('52', '1');">
-                                    В корзину
-                                </a>
-                            </div>
+                <div class="product-layout product-grid">
+                    <div class="product-thumb">
+                        <div class="image"><a href="http://itlab.md/en-gb/wifi-routers/hap-ac"><img
+                                src="img/tp-link-box.png"
+                                alt="Mikrotik hAP ac" title="Mikrotik hAP ac" class="img-fluid"></a></div>
+                        <div class="caption">
+                            <h4 class="thumb-item-title"><a href="http://itlab.md/en-gb/wifi-routers/hap-ac">Коммутатор
+                                Mikrotik hAP
+                                lite
+                                (RB941-2nD-TC)</a></h4>
+                            <p class="old_price">5 245 MDL</p>
+                            <p class="price"> 8,970.00 Lei</p>
                         </div>
-                    </div>
-
-                    <div class="product-layout product-grid">
-                        <div class="product-thumb">
-                            <div class="image"><a href="http://itlab.md/en-gb/wifi-routers/hap-ac"><img
-                                    src="img/biquiti.png"
-                                    alt="Mikrotik hAP ac" title="Mikrotik hAP ac" class="img-fluid"></a></div>
-                            <div class="caption">
-                                <h4 class="thumb-item-title"><a href="http://itlab.md/en-gb/wifi-routers/hap-ac">Видеокамера Ubiquity Bullet M2HP Titanium</a></h4>
-                                <p class="price"> 8,970.00 Lei</p>
-                            </div>
-                            <div class="flow-buttons">
-                                <button type="button" data-toggle="tooltip" data-placement="top" title=""
-                                        onclick="wishlist.add('52');" data-original-title="Add to Wish List">
-                                    <img src="assets/add_favorite.svg" alt="Wish">
-                                </button>
-                                <button type="button" data-toggle="tooltip" data-placement="top" title=""
-                                        onclick="compare.add('52');" data-original-title="Compare this Product">
-                                    <img src="assets/add_compare.svg" alt="Compare">
-                                </button>
-                            </div>
-                            <div class="button-group">
-                                <form name="quantity" action="" method="get">
-                                    <input id="quantity" type="number" value="1" min="1" max="100" step="1">
-                                </form>
-                                <a class="btn" role="button" onclick="cart.add('52', '1');">
-                                    В корзину
-                                </a>
-                            </div>
+                        <div class="flow-buttons">
+                            <button type="button" data-toggle="tooltip" data-placement="top" title=""
+                                    onclick="wishlist.add('52');" data-original-title="Add to Wish List">
+                                <img src="assets/add_favorite.svg" alt="Wish">
+                            </button>
+                            <button type="button" data-toggle="tooltip" data-placement="top" title=""
+                                    onclick="compare.add('52');" data-original-title="Compare this Product">
+                                <img src="assets/add_compare.svg" alt="Compare">
+                            </button>
                         </div>
-                    </div>
-
-                    <div class="product-layout product-grid">
-                        <div class="product-thumb">
-                            <div class="image"><a href="http://itlab.md/en-gb/wifi-routers/hap-ac"><img
-                                    src="img/mikrot-router.png"
-                                    alt="Mikrotik hAP ac" title="Mikrotik hAP ac" class="img-fluid"></a></div>
-                            <div class="caption">
-                                <h4 class="thumb-item-title"><a href="http://itlab.md/en-gb/wifi-routers/hap-ac">Маршрутизатор Mikrotik CCR1016-12G</a></h4>
-                                <p class="price"> 8,970.00 Lei</p>
-                            </div>
-                            <div class="flow-buttons">
-                                <button type="button" data-toggle="tooltip" data-placement="top" title=""
-                                        onclick="wishlist.add('52');" data-original-title="Add to Wish List">
-                                    <img src="assets/add_favorite.svg" alt="Wish">
-                                </button>
-                                <button type="button" data-toggle="tooltip" data-placement="top" title=""
-                                        onclick="compare.add('52');" data-original-title="Compare this Product">
-                                    <img src="assets/add_compare.svg" alt="Compare">
-                                </button>
-                            </div>
-                            <div class="button-group">
-                                <form name="quantity" action="" method="get">
-                                    <input id="quantity" type="number" value="1" min="1" max="100" step="1">
-                                </form>
-                                <a class="btn" role="button" onclick="cart.add('52', '1');">
-                                    В корзину
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="product-layout product-grid">
-                        <div class="product-thumb">
-                            <div class="image"><a href="http://itlab.md/en-gb/wifi-routers/hap-ac"><img
-                                    src="img/omni.png"
-                                    alt="Mikrotik hAP ac" title="Mikrotik hAP ac" class="img-fluid"></a></div>
-                            <div class="caption">
-                                <h4 class="thumb-item-title"><a href="http://itlab.md/en-gb/wifi-routers/hap-ac">Коммутатор
-                                    Mikrotik hAP
-                                    lite
-                                    (RB941-2nD-TC)</a></h4>
-                                <p class="old_price">5 245 MDL</p>
-                                <p class="price"> 8,970.00 Lei</p>
-                            </div>
-                            <div class="flow-buttons">
-                                <button type="button" data-toggle="tooltip" data-placement="top" title=""
-                                        onclick="wishlist.add('52');" data-original-title="Add to Wish List">
-                                    <img src="assets/add_favorite.svg" alt="Wish">
-                                </button>
-                                <button type="button" data-toggle="tooltip" data-placement="top" title=""
-                                        onclick="compare.add('52');" data-original-title="Compare this Product">
-                                    <img src="assets/add_compare.svg" alt="Compare">
-                                </button>
-                            </div>
-                            <div class="button-group">
-                                <form name="quantity" action="" method="get">
-                                    <input id="quantity" type="number" value="1" min="1" max="100" step="1">
-                                </form>
-                                <a class="btn" role="button" onclick="cart.add('52', '1');">
-                                    В корзину
-                                </a>
-                            </div>
+                        <div class="button-group">
+                            <form name="quantity" action="" method="get">
+                                <input id="quantity" type="number" value="1" min="1" max="100" step="1">
+                            </form>
+                            <a class="btn" role="button" onclick="cart.add('52', '1');">
+                                В корзину
+                            </a>
                         </div>
                     </div>
                 </div>
+
+                <div class="product-layout product-grid">
+                    <div class="product-thumb">
+                        <div class="image"><a href="http://itlab.md/en-gb/wifi-routers/hap-ac"><img
+                                src="img/biquiti.png"
+                                alt="Mikrotik hAP ac" title="Mikrotik hAP ac" class="img-fluid"></a></div>
+                        <div class="caption">
+                            <h4 class="thumb-item-title"><a href="http://itlab.md/en-gb/wifi-routers/hap-ac">Видеокамера
+                                Ubiquity Bullet M2HP Titanium</a></h4>
+                            <p class="price"> 8,970.00 Lei</p>
+                        </div>
+                        <div class="flow-buttons">
+                            <button type="button" data-toggle="tooltip" data-placement="top" title=""
+                                    onclick="wishlist.add('52');" data-original-title="Add to Wish List">
+                                <img src="assets/add_favorite.svg" alt="Wish">
+                            </button>
+                            <button type="button" data-toggle="tooltip" data-placement="top" title=""
+                                    onclick="compare.add('52');" data-original-title="Compare this Product">
+                                <img src="assets/add_compare.svg" alt="Compare">
+                            </button>
+                        </div>
+                        <div class="button-group">
+                            <form name="quantity" action="" method="get">
+                                <input id="quantity" type="number" value="1" min="1" max="100" step="1">
+                            </form>
+                            <a class="btn" role="button" onclick="cart.add('52', '1');">
+                                В корзину
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-layout product-grid">
+                    <div class="product-thumb">
+                        <div class="image"><a href="http://itlab.md/en-gb/wifi-routers/hap-ac"><img
+                                src="img/mikrot-router.png"
+                                alt="Mikrotik hAP ac" title="Mikrotik hAP ac" class="img-fluid"></a></div>
+                        <div class="caption">
+                            <h4 class="thumb-item-title"><a href="http://itlab.md/en-gb/wifi-routers/hap-ac">Маршрутизатор
+                                Mikrotik CCR1016-12G</a></h4>
+                            <p class="price"> 8,970.00 Lei</p>
+                        </div>
+                        <div class="flow-buttons">
+                            <button type="button" data-toggle="tooltip" data-placement="top" title=""
+                                    onclick="wishlist.add('52');" data-original-title="Add to Wish List">
+                                <img src="assets/add_favorite.svg" alt="Wish">
+                            </button>
+                            <button type="button" data-toggle="tooltip" data-placement="top" title=""
+                                    onclick="compare.add('52');" data-original-title="Compare this Product">
+                                <img src="assets/add_compare.svg" alt="Compare">
+                            </button>
+                        </div>
+                        <div class="button-group">
+                            <form name="quantity" action="" method="get">
+                                <input id="quantity" type="number" value="1" min="1" max="100" step="1">
+                            </form>
+                            <a class="btn" role="button" onclick="cart.add('52', '1');">
+                                В корзину
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-layout product-grid">
+                    <div class="product-thumb">
+                        <div class="image"><a href="http://itlab.md/en-gb/wifi-routers/hap-ac"><img
+                                src="img/omni.png"
+                                alt="Mikrotik hAP ac" title="Mikrotik hAP ac" class="img-fluid"></a></div>
+                        <div class="caption">
+                            <h4 class="thumb-item-title"><a href="http://itlab.md/en-gb/wifi-routers/hap-ac">Коммутатор
+                                Mikrotik hAP
+                                lite
+                                (RB941-2nD-TC)</a></h4>
+                            <p class="old_price">5 245 MDL</p>
+                            <p class="price"> 8,970.00 Lei</p>
+                        </div>
+                        <div class="flow-buttons">
+                            <button type="button" data-toggle="tooltip" data-placement="top" title=""
+                                    onclick="wishlist.add('52');" data-original-title="Add to Wish List">
+                                <img src="assets/add_favorite.svg" alt="Wish">
+                            </button>
+                            <button type="button" data-toggle="tooltip" data-placement="top" title=""
+                                    onclick="compare.add('52');" data-original-title="Compare this Product">
+                                <img src="assets/add_compare.svg" alt="Compare">
+                            </button>
+                        </div>
+                        <div class="button-group">
+                            <form name="quantity" action="" method="get">
+                                <input id="quantity" type="number" value="1" min="1" max="100" step="1">
+                            </form>
+                            <a class="btn" role="button" onclick="cart.add('52', '1');">
+                                В корзину
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </section>
 
