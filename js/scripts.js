@@ -131,9 +131,6 @@ $(document).ready(function () {
                alert(e);
            }
        }
-
-
-
     });
 
     /* в режиме аккордеона */
@@ -156,17 +153,13 @@ $(document).ready(function () {
                 }catch(e){
                     alert(e);
                 }
-
             }
         }
         else
         {
             $(this).removeClass('d_active');
-
         }
-
-    })
-    ;
+    });
     /* дополнительный класс tab_last,
     чтобы добавить границу к правой
     стороне последней вкладки. */
