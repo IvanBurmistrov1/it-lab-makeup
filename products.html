@@ -13,7 +13,7 @@
 
 </head>
 <body>
-<header style="display: none" class="bg-white header-shadow">
+<header class="bg-white header-shadow">
     <div class="container-fluid">
         <div id="header">
             <div id="catnav">
@@ -129,7 +129,7 @@
                 <ul class="gallery-list">
                     <li data-img="img/tp-link-image.png" class="active"><img src="img/tp-link-image.png" alt=""></li>
                     <li data-img="img/antena.png"><img src="img/antena.png" alt=""></li>
-                    <li data-img="img/biquiti.png"><img src="img/biquiti.png" alt=""></li>
+                    <li data-img="img/tp-link-box.png"><img src="img/tp-link-box.png" alt=""></li>
 
                 </ul>
                 <div class="item-image" style="position: relative">
@@ -300,7 +300,8 @@
                     <div class="video-container">
                         <div class="video">
 
-                            <iframe style="z-index: 1" src="https://www.youtube.com/embed/gpW1aoEl5WM?wmode=opaque" frameborder="0"
+                            <iframe style="z-index: 1" src="https://www.youtube.com/embed/gpW1aoEl5WM?wmode=opaque"
+                                    frameborder="0"
                                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                     allowfullscreen></iframe>
                             <!--<div class="video-filter"></div>-->
@@ -316,7 +317,8 @@
                         подтвердить указанные данные при рассмотрении вопроса о покупке.
                     </p>
                     <div class="downloads">
-                        <div><a href="#"><img src="img/download.png">Драйвер TL-WN821N V6</a></div>
+                        <div><a href="img/download.png" download=""><img src="img/download.png">Драйвер TL-WN821N V6</a>
+                        </div>
                         <div><a href="#"><img src="img/download.png">Installation Guide for Linux </a></div>
                     </div>
                 </div>
@@ -339,8 +341,10 @@
                                         Mikrotik hAP
                                         lite
                                         (RB941-2nD-TC)</a></h4>
-                                    <p class="old_price">5 245 MDL</p>
-                                    <p class="price"> 8,970.00 Lei</p>
+                                    <div class="price-wrapper d-flex ">
+                                        <p class="old_price">5 245 MDL</p>
+                                        <p class="price"> 8,970.00 Lei</p>
+                                    </div>
                                 </div>
                                 <div class="flow-buttons">
                                     <button type="button" data-toggle="tooltip" data-placement="top" title=""
@@ -352,7 +356,7 @@
                                         <img src="assets/add_compare.svg" alt="Compare">
                                     </button>
                                 </div>
-                                <div class="button-group">
+                                <div class="button-group cart-wrapper">
                                     <form name="quantity" action="" method="get">
                                         <input id="quantity" type="number" value="1" min="1" max="100" step="1">
                                     </form>
@@ -373,7 +377,9 @@
                                         Mikrotik hAP
                                         lite
                                         (RB941-2nD-TC)</a></h4>
-                                    <p class="price"> 8,970.00 Lei</p>
+                                    <div class="price-wrapper d-flex ">
+                                        <p class="price"> 8,970.00 Lei</p>
+                                    </div>
                                 </div>
                                 <div class="flow-buttons">
                                     <button type="button" data-toggle="tooltip" data-placement="top" title=""
@@ -385,7 +391,7 @@
                                         <img src="assets/add_compare.svg" alt="Compare">
                                     </button>
                                 </div>
-                                <div class="button-group">
+                                <div class="button-group cart-wrapper">
                                     <form name="quantity" action="" method="get">
                                         <input id="quantity" type="number" value="1" min="1" max="100" step="1">
                                     </form>
@@ -405,7 +411,9 @@
                                         Mikrotik hAP
                                         lite
                                         (RB941-2nD-TC)</a></h4>
-                                    <p class="price"> 8,970.00 Lei</p>
+                                    <div class="price-wrapper d-flex ">
+                                        <p class="price"> 8,970.00 Lei</p>
+                                    </div>
                                 </div>
                                 <div class="flow-buttons">
                                     <button type="button" data-toggle="tooltip" data-placement="top" title=""
@@ -417,7 +425,7 @@
                                         <img src="assets/add_compare.svg" alt="Compare">
                                     </button>
                                 </div>
-                                <div class="button-group">
+                                <div class="button-group cart-wrapper">
                                     <form name="quantity" action="" method="get">
                                         <input id="quantity" type="number" value="1" min="1" max="100" step="1">
                                     </form>
@@ -427,70 +435,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="product-layout product-grid">
-                            <div class="product-thumb">
-                                <div class="image"><a href="http://itlab.md/en-gb/wifi-routers/hap-ac"><img
-                                        src="img/cablu.png"
-                                        alt="Mikrotik hAP ac" title="Mikrotik hAP ac" class="img-fluid"></a></div>
-                                <div class="caption">
-                                    <h4 class="thumb-item-title"><a href="http://itlab.md/en-gb/wifi-routers/hap-ac">Коммутатор
-                                        Mikrotik hAP
-                                        lite
-                                        (RB941-2nD-TC)</a></h4>
-                                    <p class="price"> 8,970.00 Lei</p>
-                                </div>
-                                <div class="flow-buttons">
-                                    <button type="button" data-toggle="tooltip" data-placement="top" title=""
-                                            onclick="wishlist.add('52');" data-original-title="Add to Wish List">
-                                        <img src="assets/add_favorite.svg" alt="Wish">
-                                    </button>
-                                    <button type="button" data-toggle="tooltip" data-placement="top" title=""
-                                            onclick="compare.add('52');" data-original-title="Compare this Product">
-                                        <img src="assets/add_compare.svg" alt="Compare">
-                                    </button>
-                                </div>
-                                <div class="button-group">
-                                    <form name="quantity" action="" method="get">
-                                        <input id="quantity" type="number" value="1" min="1" max="100" step="1">
-                                    </form>
-                                    <a class="btn" role="button" onclick="cart.add('52', '1');">
-                                        В корзину
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-layout product-grid">
-                            <div class="product-thumb">
-                                <div class="image"><a href="http://itlab.md/en-gb/wifi-routers/hap-ac"><img
-                                        src="img/hap-lite.png"
-                                        alt="Mikrotik hAP ac" title="Mikrotik hAP ac" class="img-fluid"></a></div>
-                                <div class="caption">
-                                    <h4 class="thumb-item-title"><a href="http://itlab.md/en-gb/wifi-routers/hap-ac">Коммутатор
-                                        Mikrotik hAP
-                                        lite
-                                        (RB941-2nD-TC)</a></h4>
-                                    <p class="price"> 8,970.00 Lei</p>
-                                </div>
-                                <div class="flow-buttons">
-                                    <button type="button" data-toggle="tooltip" data-placement="top" title=""
-                                            onclick="wishlist.add('52');" data-original-title="Add to Wish List">
-                                        <img src="assets/add_favorite.svg" alt="Wish">
-                                    </button>
-                                    <button type="button" data-toggle="tooltip" data-placement="top" title=""
-                                            onclick="compare.add('52');" data-original-title="Compare this Product">
-                                        <img src="assets/add_compare.svg" alt="Compare">
-                                    </button>
-                                </div>
-                                <div class="button-group">
-                                    <form name="quantity" action="" method="get">
-                                        <input id="quantity" type="number" value="1" min="1" max="100" step="1">
-                                    </form>
-                                    <a class="btn" role="button" onclick="cart.add('52', '1');">
-                                        В корзину
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
 
                 </div>
@@ -514,8 +459,10 @@
                                 Mikrotik hAP
                                 lite
                                 (RB941-2nD-TC)</a></h4>
-                            <p class="old_price">5 245 MDL</p>
-                            <p class="price"> 8,970.00 Lei</p>
+                            <div class="price-wrapper d-flex ">
+                                <p class="old_price">1 445 <span class="old_price_valute">MDL</span></p>
+                                <p class="price"> 1 221 <span class="price_valute">MDL</span></p>
+                            </div>
                         </div>
                         <div class="flow-buttons">
                             <button type="button" data-toggle="tooltip" data-placement="top" title=""
@@ -528,12 +475,14 @@
                             </button>
                         </div>
                         <div class="button-group">
-                            <form name="quantity" action="" method="get">
-                                <input id="quantity" type="number" value="1" min="1" max="100" step="1">
-                            </form>
-                            <a class="btn" role="button" onclick="cart.add('52', '1');">
-                                В корзину
-                            </a>
+                            <div class="button-group cart-wrapper">
+                                <form name="quantity" action="" method="get">
+                                    <input id="quantity" type="number" value="1" min="1" max="100" step="1">
+                                </form>
+                                <a class="btn" role="button" onclick="cart.add('52', '1');">
+                                    В корзину
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -546,7 +495,9 @@
                         <div class="caption">
                             <h4 class="thumb-item-title"><a href="http://itlab.md/en-gb/wifi-routers/hap-ac">Видеокамера
                                 Ubiquity Bullet M2HP Titanium</a></h4>
-                            <p class="price"> 8,970.00 Lei</p>
+                            <div class="price-wrapper d-flex ">
+                                <p class="price"> 8,970.00 Lei</p>
+                            </div>
                         </div>
                         <div class="flow-buttons">
                             <button type="button" data-toggle="tooltip" data-placement="top" title=""
@@ -559,12 +510,14 @@
                             </button>
                         </div>
                         <div class="button-group">
-                            <form name="quantity" action="" method="get">
-                                <input id="quantity" type="number" value="1" min="1" max="100" step="1">
-                            </form>
-                            <a class="btn" role="button" onclick="cart.add('52', '1');">
-                                В корзину
-                            </a>
+                            <div class="button-group cart-wrapper">
+                                <form name="quantity" action="" method="get">
+                                    <input id="quantity" type="number" value="1" min="1" max="100" step="1">
+                                </form>
+                                <a class="btn" role="button" onclick="cart.add('52', '1');">
+                                    В корзину
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -577,7 +530,9 @@
                         <div class="caption">
                             <h4 class="thumb-item-title"><a href="http://itlab.md/en-gb/wifi-routers/hap-ac">Маршрутизатор
                                 Mikrotik CCR1016-12G</a></h4>
-                            <p class="price"> 8,970.00 Lei</p>
+                            <div class="price-wrapper d-flex ">
+                                <p class="price"> 8,970.00 Lei</p>
+                            </div>
                         </div>
                         <div class="flow-buttons">
                             <button type="button" data-toggle="tooltip" data-placement="top" title=""
@@ -590,12 +545,14 @@
                             </button>
                         </div>
                         <div class="button-group">
-                            <form name="quantity" action="" method="get">
-                                <input id="quantity" type="number" value="1" min="1" max="100" step="1">
-                            </form>
-                            <a class="btn" role="button" onclick="cart.add('52', '1');">
-                                В корзину
-                            </a>
+                            <div class="button-group cart-wrapper">
+                                <form name="quantity" action="" method="get">
+                                    <input id="quantity" type="number" value="1" min="1" max="100" step="1">
+                                </form>
+                                <a class="btn" role="button" onclick="cart.add('52', '1');">
+                                    В корзину
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -610,8 +567,10 @@
                                 Mikrotik hAP
                                 lite
                                 (RB941-2nD-TC)</a></h4>
-                            <p class="old_price">5 245 MDL</p>
-                            <p class="price"> 8,970.00 Lei</p>
+                            <div class="price-wrapper d-flex ">
+                                <p class="old_price">5 245 MDL</p>
+                                <p class="price"> 8,970.00 Lei</p>
+                            </div>
                         </div>
                         <div class="flow-buttons">
                             <button type="button" data-toggle="tooltip" data-placement="top" title=""
@@ -623,7 +582,7 @@
                                 <img src="assets/add_compare.svg" alt="Compare">
                             </button>
                         </div>
-                        <div class="button-group">
+                        <div class="button-group cart-wrapper">
                             <form name="quantity" action="" method="get">
                                 <input id="quantity" type="number" value="1" min="1" max="100" step="1">
                             </form>
@@ -640,7 +599,7 @@
 
 </main>
 
-<footer style="display: none">
+<footer>
     <div class="container-fluid">
 
         <div class="row">
