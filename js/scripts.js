@@ -44,10 +44,10 @@ $(document).ready(function () {
         boostMultiplier: 2,
         locale: null
     });
-    $(".gallery-list li").hover(function(){
+    $(".gallery-list li").hover(function () {
         $(".gallery-list .active").toggleClass('active');
         $(this).toggleClass('active');
-        $(".item-image img").attr('src',$(".gallery-list .active").data('img'));
+        $(".item-image img").attr('src', $(".gallery-list .active").data('img'));
 
     });
     $('.slick-dots').prependTo('.slick-dotted');
@@ -85,7 +85,7 @@ $(document).ready(function () {
         ]
     });
 
-    $('#tab4'  + " .related-items").slick({
+    $('#tab4' + " .related-items").slick({
         slidesToShow: 3,
         slidesToScroll: 1,
         responsive: [
@@ -109,6 +109,17 @@ $(document).ready(function () {
 
         ]
     });
+    $("#search").click(function () {
+        if ($("#search input").css('width') == '0px')
+            $("#search input").css('width', "155px").css("padding","0 12px").focus();
+
+
+    });
+    $("#search input").focusout(function (e) {
+        if($("#header_adaptive").css("width")!="1200px")
+        $(this).css("width", '0px').css("padding","0 0");
+
+    })
     // вкладки с содержанием
 // http://dbmast.ru
     $(".tab_content").hide();
@@ -124,13 +135,13 @@ $(document).ready(function () {
         $(".tab_accordion[rel^='" + activeTab + "']").addClass("d_active");
         $("#" + activeTab).addClass('selected-tab');
 
-       if ( activeTab =='tab4') {
-           try {
-               $('#' + activeTab + ' .related-items').slick('setPosition');
-           }catch (e) {
-               alert(e);
-           }
-       }
+        if (activeTab == 'tab4') {
+            try {
+                $('#' + activeTab + ' .related-items').slick('setPosition');
+            } catch (e) {
+                alert(e);
+            }
+        }
     });
 
     /* в режиме аккордеона */
@@ -147,16 +158,15 @@ $(document).ready(function () {
             $("ul.tabs li").removeClass("active");
             $("ul.tabs li[rel^='" + d_activeTab + "']").addClass("active");
 
-            if ( d_activeTab =='tab4') {
+            if (d_activeTab == 'tab4') {
                 try {
                     $('#' + d_activeTab + ' .related-items').slick('setPosition');
-                }catch(e){
+                } catch (e) {
                     alert(e);
                 }
             }
         }
-        else
-        {
+        else {
             $(this).removeClass('d_active');
         }
     });

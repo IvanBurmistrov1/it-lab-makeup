@@ -526,6 +526,7 @@ form.e-mail_input input {
     padding: 0 25px;
     margin-right: -35px;
     width: 100%;
+    overflow: hidden;
 }
 
 form.e-mail_input .btn {
@@ -1233,7 +1234,6 @@ h2 {
     height:100%;
     background:#000;
     opacity:0.8;
-
 }
 .video iframe {
     width: 100%;
@@ -1287,6 +1287,30 @@ i.download{
 .footer-subscribe img{
     position: relative;
     top:-5px;
+}
+/*adaptive header*/
+
+.line-break {
+    width: 100%;
+}
+#header_adaptive{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    padding: 0 10px;
+}
+/* adaptive geader*/
+
+ #header_adaptive #left, #header_adaptive #right, #infonav #header_adaptive {
+    display: flex;
+    align-items: center;
+}
+#infonav{
+    width: 100%;
+}
+#menu .menu-item{
+    margin: 0 20px;
+
 }
 
 @media screen and (max-width: 1200px) {
@@ -1348,7 +1372,33 @@ i.download{
     #footer-menus .menu{
         width: 50%;
     }
+
+    #menu .menu-item{
+        margin: 0 18px;
+
+    }
+    #infonav #right #phone{
+        display: none;
+    }
+    #search input{
+        width: 0px;
+        padding: 0px;
+
+    }
+    #search {
+        border-bottom: none;
+        transition: width 0.5s ease;
+    }
+
 }
+#search{
+    flex-wrap: nowrap;
+}
+#search input{
+
+    transition: width 1s ease;
+}
+
 
 @media screen and (min-width: 1200px) {
     .similar-items, .related-items {
@@ -1516,7 +1566,7 @@ i.download{
         margin-top: 14px;
     }
 
-     #item-card .price-wrapper,#item-card .cart-wrapper {
+    #item-card .price-wrapper,#item-card .cart-wrapper {
         margin-left: 15px;
         margin-right: 15px;
         margin-top: 10px;
@@ -1567,19 +1617,17 @@ i.download{
     .similar-items {
         margin-bottom: 16px;
     }
-     #footer-menus .menu-about{
-          width: 50%;
-      }
+    #footer-menus .menu-about{
+        width: 50%;
+    }
     #footer-menus .menu{
         width: 55%;
     }
     #footer-menus {
         flex-direction: column;
-
         align-items: center;
     }
     #footer-menus ul{
-
         column-count: 1;
     }
     #footer-menus ul li{
@@ -1623,7 +1671,11 @@ i.download{
     footer {
         padding-bottom: 46px !important;
     }
+    #footer-menus .menu,#footer-menus .menu-about{
+        width: 100%;
+    }
 }
+
 
 @media screen and  (min-width: 1200px) and (max-width: 1300px) {
 
