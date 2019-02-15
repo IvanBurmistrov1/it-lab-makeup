@@ -13,7 +13,7 @@
 
 </head>
 <body>
-<header class="bg-white header-shadow">
+<header style="display: none" class="bg-white header-shadow">
     <div class="container-fluid">
         <div id="header">
             <div id="catnav">
@@ -208,7 +208,7 @@
         </div>
 
         <!-- Базовый контейнер вкладок(табов) -->
-        <div  class="tabs tabs-box">
+        <div class="tabs tabs-box">
             <!-- Список вкладок -->
             <ul class="tabs">
                 <li class="active" rel="tab1">Описание</li>
@@ -606,11 +606,13 @@
         <div class="row">
             <div class="col-xl-9 col-lg-12">
                 <div class="footer-subscribe">
-                    <img src="assets/subscribe.svg" alt="Subscribe">
-                    <div class="text">
-                        <p>
-                            Подпишитесь на новости и акции
-                        </p>
+                    <div class="label-block d-flex align-items-center">
+                        <img src="assets/subscribe.svg" style="margin-right: 28px;width: 53px;height: 42px" alt="Subscribe">
+                        <div class="text" >
+                            <p>
+                                Подпишитесь на новости и акции
+                            </p>
+                        </div>
                     </div>
                     <form action="#" class="e-mail_input">
                         <input type="text" placeholder="Ваш e-mail">

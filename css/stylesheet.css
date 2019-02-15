@@ -690,6 +690,7 @@ h3 {
     -ms-column-break-inside: avoid;
     column-break-inside: avoid;
     page-break-inside: avoid;
+    line-height: 20px;
 }
 
 #footer-menus ul li a {
@@ -701,7 +702,9 @@ h3 {
 footer .phone, footer .timetable, footer .copyright, footer .follow-us {
     text-align: right;
 }
-
+#footer-menus ul li{
+    margin-right: 0px;
+}
 footer .phone {
     margin-bottom: 30px;
     margin-top: 65px;
@@ -1277,6 +1280,14 @@ i.download{
 #footer-menus .menu{
     width: 57%;
 }
+.footer-subscribe .text{
+    line-height: 20px;
+
+}
+.footer-subscribe img{
+    position: relative;
+    top:-5px;
+}
 
 @media screen and (max-width: 1200px) {
     #item-card {
@@ -1316,7 +1327,9 @@ i.download{
         padding: 42px 26px 0 20px;
         margin-bottom: 42px;
     }
-
+    .tab_characteristics{
+        padding-top: 13px;
+    }
     .related-items {
         width: 100%;
     }
@@ -1413,13 +1426,14 @@ i.download{
         text-align: left;
         margin-left: 0px;
         padding-left: 24px;
-        margin-right: 8px
+        padding-right: 8px
 
     }
     .contacts .timetable{
         justify-content: flex-start;
         width: 25%;
-        margin-right: -8px;
+        padding-left: 8px;
+        /*margin-right: -8px;*/
     }
     .contacts .timetable li{
         justify-content: flex-start;
@@ -1427,10 +1441,12 @@ i.download{
     .contacts .copyright{
         width: 25%;
         text-align: left;
-        margin-right: 8px;
+        padding-right: 8px;
     }
     .contacts .follow-us{
         justify-content: flex-start;
+        width: 25%;
+        padding-left: 8px;
     }
 }
 @media screen and (max-width: 991px) and (min-width: 768px){
@@ -1548,13 +1564,64 @@ i.download{
         font-size: 16px;
         margin-bottom: 25px;
     }
-    .similar-items{
+    .similar-items {
         margin-bottom: 16px;
-    } #footer-menus .menu-about{
+    }
+     #footer-menus .menu-about{
           width: 50%;
       }
     #footer-menus .menu{
         width: 55%;
+    }
+    #footer-menus {
+        flex-direction: column;
+
+        align-items: center;
+    }
+    #footer-menus ul{
+
+        column-count: 1;
+    }
+    #footer-menus ul li{
+        margin-right: 0px;
+        text-align: center;
+        margin-right: 0px;
+        line-height: 41px;
+        margin-bottom: 0px;
+    }
+    .footer-subscribe{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footer-subscribe .label-block {
+        padding-top: 37px;
+    }
+    .footer-subscribe .e-mail_input{
+        padding: 20px 0 44px 0;
+    }
+    #footer-menus .menu{
+        margin-top: 79px;
+    }
+    #footer-menus .menu:before{
+        top:-26px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .contacts .phone,.contacts .copyright{
+        text-align: center;
+    }
+    .contacts .copyright{
+        margin-top: 36px;
+        margin-bottom: 46px;
+    }
+    .contacts .timetable li,.contacts .follow-us{
+        justify-content: center;
+    }
+    footer {
+        padding-bottom: 46px !important;
     }
 }
 
