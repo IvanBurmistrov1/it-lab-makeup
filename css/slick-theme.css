@@ -115,16 +115,31 @@
 .slider-nav h2{
     margin-right: 45px;
 }
-.swiper, .swiper *:not(img):not(p){
+.swiper, .swiper *:not(.image_block):not(p):not(img){
     height: 150px;
 }
+
+
+
 .swiper a{
     display: flex;
     color: #000;
+    padding-bottom: 35px;
+    width: 100px;
+
+}
+.slider_item{
+    justify-content: center;
+}
+.slider_item a{
+    display: flex;
+    justify-content: space-between!important;
 }
 .swiper p{
+    text-align: center;
     font-size: 10px;
     text-transform: uppercase;
+    line-height: 18px;
 }
 .swiper .slick-arrow,.related-items .slick-arrow,.similar-items .slick-arrow, .news-latest .slick-arrow, .companies .slick-arrow{
     position: absolute;
@@ -189,6 +204,24 @@
         display: none;
         width: 0px;
     }
+    .slider h2 {
+        font-size: 34px;
+    }
+    .swiper .slick-next{
+        right: 15px;
+    }
+    .swiper .slick-prev{
+        left: 15px;
+    }
+}
+@media screen and (max-width: 767px){
+    .slider h2 {
+        font-size: 30px;
+    }
+    .swiper{
+        display: none!important;
+    }
+
 }
 @media screen and (max-width: 1500px){
     .slick-dots{

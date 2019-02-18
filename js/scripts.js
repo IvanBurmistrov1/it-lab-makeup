@@ -19,7 +19,34 @@ $(document).ready(function () {
     $('.swiper').slick({
         slidesToShow: 9,
         variableWidth: false,
-        swipe: false
+        swipe: false,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 7,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 6,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1
+                }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+
+        ]
     });
     $('.companies').slick({
         slidesToShow: 6,
@@ -117,7 +144,7 @@ $(document).ready(function () {
     });
     $("#search input").focusout(function (e) {
         if($("#header_adaptive").css("width")!="1200px")
-        $(this).css("width", '0px').css("padding","0 0");
+            $(this).css("width", '0px').css("padding","0 0");
 
     })
     // вкладки с содержанием
