@@ -299,6 +299,7 @@ hr {
 }
 
 .head {
+    margin-top: 60px;
     justify-content: space-between;
     margin-bottom: 30px;
 }
@@ -316,6 +317,7 @@ h2 {
 .head h2 {
     line-height: 1.2;
     margin-right: 60px;
+
 }
 
 .head a {
@@ -331,6 +333,7 @@ h2 {
     border-bottom: 1px solid #1c3997 !important;
     padding-bottom: 7px;
 }
+
 
 a.link {
     font-weight: normal;
@@ -484,7 +487,7 @@ a.btn.grey:before {
 }
 
 .news {
-    padding: 50px
+    padding: 0 0px 50px 0px;
 }
 
 .news .head {
@@ -1350,6 +1353,45 @@ i.download{
     height: 65px;
     justify-self: flex-start;
 }
+
+.border-line{
+    height: 1px;
+    border-bottom: 1px solid #c9c9c9;
+}
+#search{
+    flex-wrap: nowrap;
+}
+#search input{
+
+    transition: width 1s ease;
+}
+.news-block{
+    display: flex;
+}
+
+.news-block time{
+    margin-bottom: 15px;
+}
+.news-block a{
+    font-weight: bold;
+    color: #252525;
+    line-height: 1.875;
+}
+.subscribe-wrapper{
+    display: flex;
+    align-items: center;
+}
+.subscribe-icon{
+    margin-right: 33px;
+    top: -5px;
+    position: relative;
+}
+.subscribe-input-block{
+    flex-basis: 510px;
+}
+.subscribe .text {
+    padding-left: 50px;
+}
 @media screen and (max-width: 1200px) {
     .slider-nav{
         display: none!important;
@@ -1433,17 +1475,70 @@ i.download{
 
     }
 
-    main-slider .slick-next{
+    #main-slider .slick-next{
         display: none!important;
     }
-}
-#search{
-    flex-wrap: nowrap;
-}
-#search input{
+    .head{
+        flex-direction: column;
+        margin-top: 45px;
+    }
+    .head h2{
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 30px;
+        margin-right: 0px;
+    }
+    .news-latest{
+        display: flex;
+        flex-direction: row;
+        padding: 0px!important;
 
-    transition: width 1s ease;
+    }
+    .news-block{
+        display:none;
+    }
+    .news-block:nth-child(-n+3){
+        display:flex;
+        margin-right: 20px;
+    }
+    .news .head {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .news .head h2{
+        margin-bottom: 0px;
+        margin-right: 30px;
+    }
+    .subscribe-wrapper{
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+    .subscribe .text{
+        order: 1;
+        width: 100%;
+        margin-bottom: 27px;
+        padding-left: 0px;
+    }
+    .subscribe .text h4{
+        margin-bottom: 13px;
+    }
+    .subscribe-icon{
+        order: 2;
+    }
+    .subscribe-input-block{
+        order: 3;
+    }
+
+
+    .subscribe {
+
+        padding: 34px 0;
+        justify-content: space-evenly;
+    }
 }
+
 
 
 @media screen and (min-width: 1200px) {
@@ -1504,8 +1599,25 @@ i.download{
         width: calc(100% - 90px);
         margin-right: 28px;
     }
+    .certificates-head{
+        justify-content: center;
+    }
+    .certificates-head h2{
+        text-align: center;
+    }
+    .certificates-head .iso{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .services #certificates span{
+        margin-left: 0px;
+    }
 
-
+    .line{
+        margin-bottom: 37px;
+    }
 }
 
 .image {
@@ -1560,9 +1672,10 @@ i.download{
         min-width: 364px;
         margin-right: 40px;
     }
-    #main-slider .slider-container{
-        padding-right: 0px!important;
-    }
+   .slider-container{
+       padding-right: 0px!important;
+
+   }
 
 }
 @media screen and (min-width: 991px){
@@ -1755,14 +1868,61 @@ i.download{
     }
     ._slide .info{
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .info h2,.info p{
+        margin-right: 0px;
     }
     ._slide img{
         width: 100%;
     }
+    .head h2 {
+        font-size: 26px;
+    }
+    .head ul li{
+        margin-bottom: 13px;
+        margin-right: 15px;
+    }
+
+    .news-latest{
+        display: flex;
+        flex-direction: column;
+        padding: 0px!important;
+        align-items: center;
+        text-align: center;
+    }
+    .news-block{
+        margin-right: 0px!important;
+        margin-bottom: 24px;
+    }
+    .subscribe-input-block{
+        flex-basis: auto;
+    }
+    .subscribe-wrapper{
+        flex-direction: column;
+
+    }
+    .subscribe-icon{
+        margin-right: 0px;
+        margin-bottom: 10px;
+        margin-bottom: 10px;
+    }
+    .certificates-descr{
+        text-align: center;
+    }
+    /*.line{*/
+        /*justify-content: center;*/
+    /*}*/
 
 }
 
-
+@media screen and (max-width: 468px){
+    .info .btn{
+        padding: 0 20px;
+    }
+}
 @media screen and  (min-width: 1200px) and (max-width: 1300px) {
 
     .container-fluid {

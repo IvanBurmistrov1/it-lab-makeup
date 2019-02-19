@@ -187,6 +187,21 @@
     color: #252525;
     line-height: 1.875;
 }
+
+
+.news-block{
+    flex-direction: column;
+}
+
+.news-block time{
+    margin-bottom: 15px;
+}
+.news-block a{
+    font-weight: bold;
+    color: #252525;
+    line-height: 1.875;
+}
+
 .news-latest .slick-arrow{
     bottom: unset;
     margin: 0;

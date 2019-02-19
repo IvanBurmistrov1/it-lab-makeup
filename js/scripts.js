@@ -1,4 +1,16 @@
 $(document).ready(function () {
+    $("input[type='number']").InputSpinner({
+        decrementButton: "<strong>-</strong>",
+        incrementButton: "<strong>+</strong>",
+        groupClass: "input-group-spinner",
+        buttonsWidth: "0",
+        textAlign: "center",
+        autoDelay: 500,
+        autoInterval: 100,
+        boostThreshold: 15,
+        boostMultiplier: 2,
+        locale: null
+    });
     $('.slider').slick({
         infinite: true,
         slidesToShow: 1,
@@ -57,20 +69,16 @@ $(document).ready(function () {
         slidesToShow: 3,
         slidesToScroll: 3,
         variableWidth: false,
-        swipe: false
+        swipe: false,
+        responsive: [{
+            breakpoint: 1200,
+            settings: "unslick"
+        },{
+            breakpoint: 1200,
+            settings: "unslick"
+        }]
     });
-    $("input[type='number']").InputSpinner({
-        decrementButton: "<strong>-</strong>",
-        incrementButton: "<strong>+</strong>",
-        groupClass: "input-group-spinner",
-        buttonsWidth: "0",
-        textAlign: "center",
-        autoDelay: 500,
-        autoInterval: 100,
-        boostThreshold: 15,
-        boostMultiplier: 2,
-        locale: null
-    });
+
     $(".gallery-list li").hover(function () {
         $(".gallery-list .active").toggleClass('active');
         $(this).toggleClass('active');
@@ -138,13 +146,13 @@ $(document).ready(function () {
     });
     $("#search").click(function () {
         if ($("#search input").css('width') == '0px')
-            $("#search input").css('width', "155px").css("padding","0 12px").focus();
+            $("#search input").css('width', "155px").css("padding", "0 12px").focus();
 
 
     });
     $("#search input").focusout(function (e) {
-        if($("#header_adaptive").css("width")!="1200px")
-            $(this).css("width", '0px').css("padding","0 0");
+        if ($("#header_adaptive").css("width") != "1200px")
+            $(this).css("width", '0px').css("padding", "0 0");
 
     })
     // вкладки с содержанием
