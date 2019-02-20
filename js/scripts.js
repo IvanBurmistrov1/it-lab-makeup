@@ -28,10 +28,11 @@ $(document).ready(function () {
         variableWidth: false,
         fade: true
     });
+
     $('.swiper').slick({
         slidesToShow: 9,
         variableWidth: false,
-        swipe: false,
+        swipe: true,
         responsive: [
             {
                 breakpoint: 1200,
@@ -60,10 +61,52 @@ $(document).ready(function () {
 
         ]
     });
+
     $('.companies').slick({
         slidesToShow: 6,
         variableWidth: false,
-        swipe: false
+        swipe: true,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 5,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 620,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 400,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+
+        ]
     });
     $('.news-latest').slick({
         slidesToShow: 3,
@@ -186,7 +229,7 @@ $(document).ready(function () {
         }
         $(".tab_content").hide().removeClass('selected-tab');
         var d_activeTab = $(this).attr("rel");
-        if (id != d_activeTab) {
+        /*if (id != d_activeTab) {*/
             $("#" + d_activeTab).addClass('selected-tab').fadeIn();
             $(".tab_accordion").removeClass("d_active");
             $(this).addClass("d_active");
@@ -200,16 +243,25 @@ $(document).ready(function () {
                     alert(e);
                 }
             }
-        }
+       /* }
         else {
             $(this).removeClass('d_active');
-        }
+        }*/
     });
     /* дополнительный класс tab_last,
     чтобы добавить границу к правой
     стороне последней вкладки. */
     $('ul.tabs li').last().addClass("tab_last");
 
+    //$(".item-image img").loupe();
+    $(".item-image img").okzoom({
+        sclaleWidth: 1000,
+        width: 180,
+        height: 180,
+        background: "transparent",
+        border: "1px solid black",
+        shadow: "0 0 5px #000"
+    });
 })
 ;
 

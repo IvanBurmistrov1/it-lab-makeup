@@ -222,10 +222,10 @@
     .slider h2 {
         font-size: 34px;
     }
-    .swiper .slick-next{
+    .swiper .slick-next,.companies .slick-next{
         right: 15px;
     }
-    .swiper .slick-prev{
+    .swiper .slick-prev,.companies .slick-prev{
         left: 15px;
     }
 }
