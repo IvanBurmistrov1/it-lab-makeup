@@ -545,7 +545,10 @@ form.e-mail_input .btn {
 }
 
 .services .line img {
-    margin-right: 25px
+    margin-right: 25px;
+    width: 52px;
+    height: 52px;
+    align
 }
 
 .services p {
@@ -569,6 +572,7 @@ form.e-mail_input .btn {
     margin-bottom: 66px;
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .companies {
@@ -620,6 +624,7 @@ form.e-mail_input .btn {
 
 .cooperate .contact_us, .cooperate .heading {
     margin: 50px auto;
+    margin-bottom: 20px;
 }
 
 h3 {
@@ -873,7 +878,7 @@ footer {
     width: 30px;
     height: 63px;
 
-    right: 15px;
+    right: 13px;
     bottom: 0px;
 }
 
@@ -1620,9 +1625,18 @@ i.download {
     }
 
     .subscribe {
-
         padding: 34px 0;
         justify-content: space-evenly;
+    }
+    .services #certificates {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    .swiper .image_block{
+        height: 50px;
+    }
+    .swiper .slick-slide > div > div a{
+        padding-bottom: 20px;
     }
 }
 
@@ -1715,6 +1729,9 @@ i.download {
 
     #warranties .line {
         flex-basis: 50%;
+    }
+    #warranties br {
+        display: none;
     }
     .certificates-head .iso img {
         margin-bottom: 13px;
@@ -2082,12 +2099,16 @@ i.download {
         align-items: flex-start;
         flex-direction: column;
         flex-wrap: nowrap;
+        width: auto;
     }
 
     #warranties .line:last-child {
         margin-bottom: 0px;
     }
-
+    .services #certificates {
+        margin-top: 44px;
+        margin-bottom: 44px;
+    }
 }
 
 @media screen and (max-width: 468px) {

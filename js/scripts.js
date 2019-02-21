@@ -18,7 +18,8 @@ $(document).ready(function () {
         asNavFor: '.slider-nav',
         verticalSwiping: true,
         vertical: true,
-        variableWidth: false
+        variableWidth: false,
+        adaptiveHeight: true
     });
     $('.slider-nav').slick({
         slidesToShow: 1,
@@ -121,12 +122,27 @@ $(document).ready(function () {
             settings: "unslick"
         }]
     });
-
+    $(window).on('resize orientationChange', function(event) {
+            if(!$('.news-latest').hasClass('slick-initialized') && $(window).width()>=1200) {
+            $('.news-latest').slick({
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                variableWidth: false,
+                swipe: false,
+                responsive: [{
+                    breakpoint: 1200,
+                    settings: "unslick"
+                },{
+                    breakpoint: 1200,
+                    settings: "unslick"
+                }]
+            });
+        }
+    });
     $(".gallery-list li").hover(function () {
         $(".gallery-list .active").toggleClass('active');
         $(this).toggleClass('active');
         $(".item-image img").attr('src', $(".gallery-list .active").data('img'));
-
     });
     $('.slick-dots').prependTo('.slick-dotted');
     $(".gallery").slick();
@@ -253,15 +269,8 @@ $(document).ready(function () {
     стороне последней вкладки. */
     $('ul.tabs li').last().addClass("tab_last");
 
-    //$(".item-image img").loupe();
-    $(".item-image img").okzoom({
-        sclaleWidth: 1000,
-        width: 180,
-        height: 180,
-        background: "transparent",
-        border: "1px solid black",
-        shadow: "0 0 5px #000"
-    });
+
+
 })
 ;
 

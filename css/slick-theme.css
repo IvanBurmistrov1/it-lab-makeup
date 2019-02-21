@@ -228,6 +228,9 @@
     .swiper .slick-prev,.companies .slick-prev{
         left: 15px;
     }
+    .swiper, .swiper *:not(.image_block):not(p):not(img){
+        height: 120px;
+    }
 }
 @media screen and (max-width: 767px){
     .slider h2 {
@@ -236,8 +239,8 @@
     .swiper{
         display: none!important;
     }
-
 }
+
 @media screen and (max-width: 1500px){
     .slick-dots{
         left: 0;
