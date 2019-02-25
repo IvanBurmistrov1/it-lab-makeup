@@ -205,7 +205,7 @@
 .news-latest .slick-arrow{
     bottom: unset;
     margin: 0;
-    top: 10px
+    top: 75px;
 }
 .product-thumb{
     width: 100%;
@@ -238,6 +238,13 @@
     }
     .swiper{
         display: none!important;
+    }
+    .slick-dots{
+        margin-right: 30px;
+    }
+
+    ._slide .btn,._slide .info p{
+        margin-bottom: 28px;
     }
 }
 

@@ -15,7 +15,7 @@
 <body>
 <header style="" class="bg-white header-shadow">
     <div class="container-fluid">
-        <div id="header_adaptive" >
+        <div id="header_adaptive">
             <div style="width: 45px" class="dropdown">
                 <button class="dropdown-toggle" type="button" id="lang-dropdown" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">
@@ -49,12 +49,12 @@
                     <a href="#">Контакты</a>
                 </li>
             </ul>
-            <div style=""  class ="menu-hidden">
+            <div style="" class="menu-hidden">
                 <button class="menu-hidden-icon"></button>
                 <span> Меню</span>
             </div>
             </divstyle>
-            <div style="width: 7px"  id="socials">
+            <div style="width: 7px" id="socials">
                 <div class="facebook">
                     <a href="#"><img src="assets/facebook.svg" alt="Facebook"></a>
                 </div>
@@ -129,18 +129,29 @@
 <main style="" id="main-wrapper">
     <div class="container-fluid">
         <div id="item-card">
-            <div class="item-gallery">
-                <ul class="gallery-list">
-                    <li data-img="img/tp-link-image.png" class="active"><img src="img/tp-link-image.png" alt=""></li>
-                    <li data-img="img/antena.png"><img src="img/antena.png" alt=""></li>
-                    <li data-img="img/tp-link-box.png"><img src="img/tp-link-box.png" alt=""></li>
+            <div class="item-gallery" style="position: relative">
 
+                <ul class="gallery-list">
+                    <li data-img="img/tp-link-image.png" data-slick-index="0" class="active"><img src="img/tp-link-image.png" alt=""></li>
+                    <li data-img="img/antena.png" data-slick-index="1"><img src="img/antena.png" alt=""></li>
+                    <li data-img="img/tp-link-box.png" data-slick-index="2"><img src="img/tp-link-box.png" alt=""></li>
                 </ul>
-                <div class="item-image" style="position: relative">
-                    <img src="img/tp-link-image.png">
-                    <span class="new-item-mark">
-                    </span>
+                <div class="gallery-images">
+
+                    <div class="item-image" >
+                        <img src="img/tp-link-image.png">
+
+                    </div>
+                    <div class="item-image" >
+                        <img src="img/antena.png">
+
+                    </div>
+                    <div class="item-image" >
+                        <img src="img/tp-link-box.png">
+
+                    </div>
                 </div>
+                <span class="new-item-mark"></span>
             </div>
             <ul class="item-description breadcrumb " style="margin-top: 40px;margin-bottom: 40px">
                 <li><a href="#">Каталог</a><span></span></li>
@@ -220,6 +231,8 @@
                 <li rel="tab3">Дополнительно</li>
                 <li rel="tab4" class="tab_last">Сопутствующее</li>
             </ul>
+
+
             <!-- Контейнер для блоков с содержанием -->
             <div class="tab_container">
                 <!-- Панель заголовка в режиме аккордеона -->
@@ -244,58 +257,59 @@
 
                 <h3 class="tab_accordion" rel="tab2">Харрактеристика</h3>
                 <div id="tab2" class="tab_content tab_characteristics" style="display: none;">
-                    <table>
-                        <thead>
-                        <tr>
-                            <th colspan="2">
-                                Аппаратные Характеристики
-                            </th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>Интерфейс</td>
-                            <td>Мини USB 2.0</td>
-                        </tr>
-                        <tr>
-                            <td>Кнопки</td>
-                            <td>Кнопка QSS</td>
-                        </tr>
-                        <tr>
-                            <td>Размеры (ШхДхВ)</td>
-                            <td>90 x 68 x 16,8 мм</td>
-                        </tr>
-                        <tr>
+                    <div style="overflow-x:auto">
+                        <table style="min-width: 320px">
+                            <thead>
+                            <tr>
+                                <th colspan="2">
+                                    Аппаратные Характеристики
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>Интерфейс</td>
+                                <td>Мини USB 2.0</td>
+                            </tr>
+                            <tr>
+                                <td>Кнопки</td>
+                                <td>Кнопка QSS</td>
+                            </tr>
+                            <tr>
+                                <td>Размеры (ШхДхВ)</td>
+                                <td>90 x 68 x 16,8 мм</td>
+                            </tr>
+                            <tr>
 
-                            <td>Тип антенны</td>
-                            <td>Двойная всенаправленная антенна</td>
-                        </tr>
-                        <tr>
-                            <td>Коэффициент усиления антенны</td>
-                            <td>3 дБи</td>
-                        </tr>
+                                <td>Тип антенны</td>
+                                <td>Двойная всенаправленная антенна</td>
+                            </tr>
+                            <tr>
+                                <td>Коэффициент усиления антенны</td>
+                                <td>3 дБи</td>
+                            </tr>
 
 
-                        <thead>
-                        <tr>
-                            <th colspan="2">
-                                Параметры беспроводного модуля
-                            </th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>Стандарты беспроводных сетей</td>
-                            <td>IEEE 802.11n, IEEE 802.11g, IEEE 802.11b</td>
-                        </tr>
-                        <tr>
-                            <td>Диапазон частот (приём и передача)</td>
-                            <td>2400-2483,5 МГц</td>
-                        </tr>
-                        </tbody>
+                            <thead>
+                            <tr>
+                                <th colspan="2">
+                                    Параметры беспроводного модуля
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>Стандарты беспроводных сетей</td>
+                                <td>IEEE 802.11n, IEEE 802.11g, IEEE 802.11b</td>
+                            </tr>
+                            <tr>
+                                <td>Диапазон частот (приём и передача)</td>
+                                <td>2400-2483,5 МГц</td>
+                            </tr>
+                            </tbody>
 
-                    </table>
-
+                        </table>
+                    </div>
                 </div>
                 <!-- конец #tab2 -->
                 <h3 class="tab_accordion" rel="tab3">Дополнительно</h3>
@@ -440,7 +454,6 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
                 <!-- конец #tab4 -->
@@ -623,12 +636,11 @@
                             </p>
                         </div>
                     </div>
-                    <div>
-                        <form action="#" class="e-mail_input">
-                            <input type="text" placeholder="Ваш e-mail">
-                            <button role="button" type="submit" class="btn">подписаться</button>
-                        </form>
-                    </div>
+
+                    <form action="#" class="e-mail_input">
+                        <input type="text" placeholder="Ваш e-mail">
+                        <button role="button" type="submit" class="btn">подписаться</button>
+                    </form>
                 </div>
                 <div id="footer-menus">
                     <ul class="menu-about">

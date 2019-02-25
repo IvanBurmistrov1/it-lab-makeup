@@ -337,6 +337,13 @@ h2 {
     padding-bottom: 7px;
 }
 
+.head ul li {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 13px;
+
+}
+
 a.link {
     font-weight: normal;
     font-size: 16px;
@@ -509,7 +516,7 @@ time {
 }
 
 .subscribe .text h4 {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .line {
@@ -525,7 +532,9 @@ form {
     display: flex;
     align-items: center;
 }
-
+form.e-mail_input{
+    margin-left: 15px;
+}
 form.e-mail_input input {
     line-height: 40px;
     border-radius: 21px;
@@ -548,7 +557,7 @@ form.e-mail_input .btn {
     margin-right: 25px;
     width: 52px;
     height: 52px;
-    align
+
 }
 
 .services p {
@@ -569,10 +578,11 @@ form.e-mail_input .btn {
 
 #warranties {
     /*margin-top: 66px;*/
-    margin-bottom: 66px;
+    margin-bottom: 26px;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+
 }
 
 .companies {
@@ -765,6 +775,7 @@ footer .phone:before {
 
 .follow-us span {
     font-size: 16px;
+    margin-right: 10px;
     color: rgb(143, 132, 132);
 }
 
@@ -816,7 +827,7 @@ footer {
 
 #item-card {
     display: grid;
-    grid-template-columns: 7fr 5fr;
+    grid-template-columns: 58.3% 41.6%;
     grid-auto-rows: auto;
 
 }
@@ -870,29 +881,30 @@ footer {
     width: 30px;
     height: 63px;
     top: 0px;
-    right: 0;
+    right: 40px;
 }
 .action-mark{
     position: absolute;
     background-image: url('../img/action.png');
     width: 30px;
     height: 63px;
-
     right: 13px;
     bottom: 0px;
+}
+.gallery-images{
+    width:  calc(100% - 130px);
+    margin-right: 40px;
 }
 
 .item-image {
     width: 100%;
-    margin-right: 40px;
+    position: relative;
 }
 
 .item-image img {
     width: 100%;
     height: 420px;
-    /*border: silver 1px solid;*/
     object-fit: contain;
-
 }
 
 #item-title {
@@ -919,7 +931,7 @@ footer {
 }
 
 .item-action span {
-
+    line-height: 20px;
     font-size: 12px;
     padding-left: 6px;
     padding-top: 4px;
@@ -1412,6 +1424,7 @@ i.download {
 
 .news-block {
     display: flex;
+    width: 33.3%;
 }
 
 .news-block time {
@@ -1465,7 +1478,7 @@ i.download {
     }
 
     #item-card {
-        grid-template-columns: 6fr 6fr;
+        grid-template-columns: 50% 50%;
     }
 
     h2 {
@@ -1489,10 +1502,12 @@ i.download {
 
     .gallery-list li {
         margin: 0 6px;
+        margin-bottom: 12px;
     }
 
     .new-item-mark {
         top: 50px;
+        right: 0px;
     }
 
     #item-title {
@@ -1523,7 +1538,9 @@ i.download {
     .tabs {
         margin-bottom: 50px;
     }
-
+    footer {
+        padding-bottom: 46px !important;
+    }
     #footer-menus .menu-about {
         width: 50%;
     }
@@ -1571,7 +1588,15 @@ i.download {
         margin-bottom: 30px;
         margin-right: 0px;
     }
+    .head ul {
+        width: 70%;
 
+    }
+    .head ul li {
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-bottom: 17px;
+    }
     .news-latest {
         display: flex;
         flex-direction: row;
@@ -1638,6 +1663,10 @@ i.download {
     .swiper .slick-slide > div > div a{
         padding-bottom: 20px;
     }
+    .gallery-images {
+        width: 100%;
+        margin-right: 0px;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1648,6 +1677,9 @@ i.download {
 }
 
 @media screen and (max-width: 991px) {
+    .last-selected{
+        display: block;
+    }
     .item-image img {
         height: 325px;
     }
@@ -1756,6 +1788,7 @@ i.download {
     .contact_us p#call-us{
         padding-right: 0px;
     }
+
 }
 
 .image {
@@ -1872,7 +1905,7 @@ i.download {
     }
 
     #item-card {
-        grid-template-columns: 1fr;
+        grid-template-columns: 100%;
     }
 
     .item-gallery {
@@ -2016,10 +2049,6 @@ i.download {
         justify-content: center;
     }
 
-    footer {
-        padding-bottom: 46px !important;
-    }
-
     #footer-menus .menu, #footer-menus .menu-about {
         width: 100%;
     }
@@ -2052,11 +2081,7 @@ i.download {
         font-size: 26px;
     }
 
-    .head ul li {
-        margin-bottom: 13px;
-        padding-right: 7px;
-        padding-left: 7px;
-    }
+
 
     .news-latest {
         display: flex;
@@ -2077,7 +2102,6 @@ i.download {
 
     .subscribe-wrapper {
         flex-direction: column;
-
     }
 
     .subscribe-icon {
@@ -2090,7 +2114,7 @@ i.download {
         text-align: center;
     }
 
-    .warranties-wrap {
+    .warranties-wrap  {
         justify-content: center;
     }
 
@@ -2109,6 +2133,13 @@ i.download {
         margin-top: 44px;
         margin-bottom: 44px;
     }
+    .news-block {
+        display: flex;
+        width: 100%;
+    }
+    form.e-mail_input{
+        margin-left: 0px;
+    }
 }
 
 @media screen and (max-width: 468px) {
@@ -2117,6 +2148,10 @@ i.download {
     }
     .phone_email{
         margin-left: 40px;
+    }
+
+    .to-catalog{
+        padding-right: 25px;
     }
 }
 
